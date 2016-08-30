@@ -1,0 +1,2406 @@
+# Translation of Development (trunk) in Swedish
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-09-30 18:15:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Development (trunk)\n"
+
+#: lib/wpdev-settings-general.php:945 lib/wpdev-settings-general.php:970
+#: lib/wpdev-settings-general.php:1004 lib/wpdev-settings-general.php:1019
+#: lib/wpdev-settings-general.php:1036 lib/wpdev-settings-general.php:1242
+msgid "Warning"
+msgstr "Varning"
+
+#: lib/wpdev-settings-general.php:2363
+msgid "HTML tags is accepted."
+msgstr "HTML taggar accepteras."
+
+#: lib/wpdev-settings-general.php:1500 lib/wpdev-settings-general.php:1543
+#: lib/wpdev-settings-general.php:1588 lib/wpdev-settings-general.php:1634
+#: lib/wpdev-settings-general.php:1688 lib/wpdev-settings-general.php:1731
+#: lib/wpdev-settings-general.php:1964 lib/wpdev-settings-general.php:2045
+#: lib/wpdev-settings-general.php:2117 lib/wpdev-settings-general.php:2205
+msgid "Active"
+msgstr "Aktiv"
+
+#: lib/wpdev-settings-general.php:1970
+msgid "To"
+msgstr "Till"
+
+#: lib/wpdev-settings-general.php:2123 lib/wpdev-settings-general.php:2211
+msgid "Send to Admin"
+msgstr "Skicka till administratör"
+
+#: lib/wpdev-settings-general.php:2131 lib/wpdev-settings-general.php:2219
+msgid "Check this box to send copy of this email to Admin"
+msgstr "Markera denna rutra för att skicka en kopia till administratören"
+
+#: lib/wpdev-settings-general.php:2053 lib/wpdev-settings-general.php:2139
+#: lib/wpdev-settings-general.php:2228
+msgid "Type the default %sadmin email%s sending the booking confimation"
+msgstr "Ange standard %sadmin e-post%s för bokningsbekräftelse."
+
+#: lib/wpdev-settings-general.php:1984 lib/wpdev-settings-general.php:2058
+#: lib/wpdev-settings-general.php:2144 lib/wpdev-settings-general.php:2233
+msgid "Subject"
+msgstr "Ämne"
+
+#: lib/wpdev-settings-general.php:1991 lib/wpdev-settings-general.php:2066
+#: lib/wpdev-settings-general.php:2151 lib/wpdev-settings-general.php:2240
+msgid "Content"
+msgstr "Innehåll"
+
+#: lib/wpdev-settings-general.php:2303 lib/wpdev-settings-general.php:2305
+msgid "You can use following shortcodes in content of this template"
+msgstr "Du kan använda följande \"shortcoder\" i innehållet för denna mall"
+
+#: lib/wpdev-settings-general.php:2311
+msgid "%s - inserting data info about the booking, which you configured in the content form at Settings Fields page"
+msgstr "%s - fyller i information om bokningen, som du konfigurerat i innehållsformuläret på Inställningssidan"
+
+#: lib/wpdev-settings-general.php:2313
+msgid "%s - inserting ID of booking "
+msgstr "%s - fyller i Bokningens ID"
+
+#: lib/wpdev-settings-general.php:2315
+msgid "%s or %s - inserting the title of the booking resource "
+msgstr "%s eller %s - fyller i data från bokningsresurs"
+
+#: lib/wpdev-settings-general.php:2317
+msgid "%s - inserting the cost of  booking "
+msgstr "%s - fyller i kostnaden för bokningen"
+
+#: lib/wpdev-settings-general.php:2321
+msgid "%s - inserting the dates of booking"
+msgstr "%s - fyller i bokningsdatum"
+
+#: lib/wpdev-settings-general.php:2323
+msgid "%s - inserting check-in date (first day of reservation),"
+msgstr "%s - fyller i Incheckningddatum (reservationens första dag)"
+
+#: lib/wpdev-settings-general.php:2325 lib/wpdev-settings-general.php:2326
+msgid "%s - inserting check-out date (last day of reservation),"
+msgstr "%s - fyller i Utcheckningsdatum (reservationens sista dag)"
+
+#: lib/wpdev-settings-general.php:2328
+msgid "%s - inserting the number of booking dates "
+msgstr "%s -  fyller i antalet bokningsdagar"
+
+#: lib/wpdev-settings-general.php:2381
+msgid "Customization of email template, which is sending to Admin after new booking"
+msgstr "Konfigurering av e-postmall, som skickas till Administratör efter ny bokning"
+
+#: lib/wpdev-settings-general.php:2382
+msgid "New for Admin"
+msgstr "Vid ny, att skicka till Admin"
+
+#: lib/wpdev-settings-general.php:2390
+msgid "Customization of email template, which is sending to Visitor after new booking"
+msgstr "Konfigurering av e-postmall, som skickas till besökare efter ny bokning"
+
+#: lib/wpdev-settings-general.php:2391
+msgid "New for Visitor"
+msgstr "Vid ny, att skicka till besökare"
+
+#: lib/wpdev-settings-general.php:2399
+msgid "Customization of email template, which is sending to Visitor after approval of booking"
+msgstr "Konfigurering av e-postmall, som skickas till besökare efter godkänd bokning"
+
+#: lib/wpdev-settings-general.php:2408
+msgid "Customization of email template, which is sending to Visitor after Cancellation of booking"
+msgstr "Konfigurering av e-postmall, som skickas till besökare efter avbruten bokning"
+
+#: lib/wpdev-settings-general.php:2409
+msgid "Declined"
+msgstr "Avböjd"
+
+#: lib/wpdev-settings-general.php:1950
+msgid "Email to \"Admin\" after a new booking"
+msgstr "E-post till Administratör efter ny bokning"
+
+#: lib/wpdev-settings-general.php:1972
+msgid "Type default %sadmin email%s for booking confirmation"
+msgstr "Ange standard %sadmin e-post%s för bokningsbekräftelser"
+
+#: lib/wpdev-settings-general.php:1979
+msgid "Type the default %sadmin email%s sending the booking confimation. You can use this %s shortcode."
+msgstr "Ange standard %sfrån e-post%s för bokningsbekräftelser. Du kan använda denna %s \"shortcode\"."
+
+#: lib/wpdev-settings-general.php:1986
+msgid "Type your email %ssubject%s for the booking confimation message."
+msgstr "Ange e-postens %sämne%s för bokningsbekräftelse meddelande."
+
+#: lib/wpdev-settings-general.php:2006
+msgid "Type your %semail message content for checking booking%s in. "
+msgstr "Editera %sInnehållet i e-post för ny bokning%s"
+
+#: lib/wpdev-settings-general.php:2030
+msgid "Email to \"Person\" after they make a new reservation"
+msgstr "E-post till Bokaren efter att det skapats en ny reservation"
+
+#: lib/wpdev-settings-general.php:2060
+msgid "Type email subject for %svisitor after creating a new reservation%s."
+msgstr "Skriv ämne till %sbesökare efter att det skapats en ny reservation%s."
+
+#: lib/wpdev-settings-general.php:2081
+msgid "Type your %semail message for visitor after creating a new reservation%s"
+msgstr "Editera %se-postmeddelande till besökare efter att en ny bokningsreservation skapats%s"
+
+#: lib/wpdev-settings-general.php:2103
+msgid "Email to \"Person\" after booking is approved"
+msgstr "E-post till Bokaren efter att bokning godkänts"
+
+#: lib/wpdev-settings-general.php:2146
+msgid "Type your email subject for the %sapproved booking%s."
+msgstr "Skriv ämne för %sgodkänd bokning%s."
+
+#: lib/wpdev-settings-general.php:2166
+msgid "Type your %semail message for the approved booking%s from the website"
+msgstr "Skriv %se-postmeddelande för godkänd bokning%s från hemsidan"
+
+#: lib/wpdev-settings-general.php:2190
+msgid "Email to \"Person\" after their booking has been denied"
+msgstr "E-post till Bokaren efter att bokning avböjts"
+
+#: lib/wpdev-settings-general.php:2235
+msgid "Type your email subject for the %sdenied booking%s."
+msgstr "Skriv ämne för %savböjd bokning%s."
+
+#: lib/wpdev-settings-general.php:2255
+msgid "Type your %semail message for the denied booking%s from the website"
+msgstr "Skriv %se-postmeddelande för avböjdbokning%s från hemsidan"
+
+#: lib/wpdev-settings-general.php:2265
+msgid "For example: \"Your reservation %s on these date(s): %s has been canceled. Please contact us for more information. %s Thank you, Reservation service.\""
+msgstr "Exempel: \"Din reservation %s dessa datum: %s har avböjts. Var vänlig kontakta oss för mer information. %s Tack så mycket, Reservation service.\" "
+
+#: lib/wpdev-settings-general.php:857
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: lib/wpdev-settings-general.php:879
+msgid "Type your date format for emails and the booking table. %sDocumentation on date formatting%s"
+msgstr "Ange önskat datumformat för e-post och bokningstabellen. %sHjälp om datumformatering%s"
+
+#: lib/wpdev-settings-general.php:887
+msgid "Dates view"
+msgstr "Namn på dagar"
+
+#: lib/wpdev-settings-general.php:890
+msgid "Short days view"
+msgstr "Förkortningar"
+
+#: lib/wpdev-settings-general.php:891
+msgid "Wide days view"
+msgstr "Hela namn"
+
+#: lib/wpdev-settings-general.php:893
+msgid "Select the default view for dates on the booking tables"
+msgstr "Ange hur datum ska visas i bokningstabeller"
+
+#: lib/wpdev-settings-general.php:901
+msgid "Show / hide hints"
+msgstr "Visa eller dölj hjälp"
+
+#: lib/wpdev-settings-general.php:907
+msgid "Check this box if you want to show help hints on the admin panel."
+msgstr "Markera denna ruta om du vill visa hjälptexter i administratörspanelen."
+
+#: lib/wpdev-settings-general.php:938
+msgid "Checking to prevent double booking, during submitting booking"
+msgstr "Kontroll för att förhindra dubbelbokning, under bokningsprocessen"
+
+#: lib/wpdev-settings-general.php:945
+msgid "This feature can impact to speed of submitting booking. Do you really want to do this?"
+msgstr "Denna funktion kan påverka bokningsprocessens hastighet. Vill du verkligen göra detta?"
+
+#: lib/wpdev-settings-general.php:947
+msgid "Check this box, if you want to %sre-check if the selected dates available during submitting booking%s."
+msgstr "Markera om du vill %sdubbelkolla valda datum som fortfarande tillgängliga under bokningsprocessen%s."
+
+#: lib/wpdev-settings-general.php:951
+msgid "This feature useful to prevent double booking of the same date(s) or time(s), if several visitors try to book the same date(s) in same calendar during the same time."
+msgstr "Denna funktion är användbar för att förhindra dubbelbokning av samma datum eller tider, om flera besökare försöker boka samma datum i samma kalender under samma tid."
+
+#: lib/wpdev-settings-general.php:954
+msgid "This feature does not work for booking resources with capacity higher than one."
+msgstr "Denna funktion fungerar inte för boknings resurser med kapacitet högre värde än 1."
+
+#: lib/wpdev-settings-general.php:963
+msgid "Allow unlimited bookings per same day(s)"
+msgstr "Tillåt obegränsat antal bokningar för samma dag(ar)"
+
+#: lib/wpdev-settings-general.php:970
+msgid "You allow unlimited number of bookings per same dates, its can be a reason of double bookings on the same date. Do you really want to do this?"
+msgstr "Du tillåter obegränsat antal bokningar för samma datum, det kan ge upphov till dubbelbokningar på samma datum. Vill du verkligen göra detta?"
+
+#: lib/wpdev-settings-general.php:972
+msgid "Check this box, if you want to %sset any days as available%s in calendar. Your visitors will be able to make %sunlimited bookings per same date(s) in calendar and do not see any booked date(s)%s of other visitors."
+msgstr "Markera om du vill %sställa in kalenderns alla dagar som tillgängliga%s. Dina besökare kommer kunna boka %sobegränsat antal bokningar samma datum i kalendern och kommer inte se andra besökares redan bokade datum%s."
+
+#: lib/wpdev-settings-general.php:988
+msgid "Show advanced settings of JavaScript loading"
+msgstr "Visa avancerade inställningar för laddning av Javascript"
+
+#: lib/wpdev-settings-general.php:989
+msgid "Hide advanced settings of JavaScript loading"
+msgstr "Dölj avancerade inställningar för laddning av Javascript"
+
+#: lib/wpdev-settings-general.php:998
+msgid "Disable Bootstrap loading on Front-End"
+msgstr "Ladda inte \"Bootstrap\" i Front-End"
+
+#: lib/wpdev-settings-general.php:1004 lib/wpdev-settings-general.php:1019
+#: lib/wpdev-settings-general.php:1036
+msgid "You are need to be sure what you are doing. You are disable of loading some JavaScripts Do you really want to do this?"
+msgstr "Du måste vara säker på vad du gör här. Du håller på att inaktivera laddningen av vissa JavaScripts. Vill du verkligen göra detta?"
+
+#: lib/wpdev-settings-general.php:1006 lib/wpdev-settings-general.php:1021
+msgid " If your theme or some other plugin is load the BootStrap JavaScripts, you can disable  loading of this script by this plugin."
+msgstr " Undvik att ladda Javascript för BootStrap om det redan laddats av aktuellt tema eller en annan tillägg."
+
+#: lib/wpdev-settings-general.php:1013
+msgid "Disable Bootstrap loading on Back-End"
+msgstr "Ladda inte \"Bootstrap\" i Back-End"
+
+#: lib/wpdev-settings-general.php:1030
+msgid "Load JS and CSS files only on specific pages"
+msgstr "Ladda JS and CSS filer endast på specifika sidor"
+
+#: lib/wpdev-settings-general.php:1038
+msgid "Activate loading of CSS and JavaScript files of plugin only at specific pages."
+msgstr "Aktivera laddning av CSS and JavaScript-filer till tillägget endast på specifika sidor."
+
+#: lib/wpdev-settings-general.php:1052
+msgid "Relative URLs of pages, where to load plugin CSS and JS files"
+msgstr "Relativ URL till sidor, för laddning av tilläggets CSS & JS filer"
+
+#: lib/wpdev-settings-general.php:1057
+msgid "Enter relative URLs of pages, where you have Booking Calendar elements (booking forms or availability calendars). Please enter one URL per line. Example: %s"
+msgstr "Skriv relativ URL till sidor, där du har Bokningskalender-element (bokningsformulär eller tillgänglighetskalendrar). Skriv en URL per rad. Exempel: %s"
+
+#: lib/wpdev-settings-general.php:1075
+msgid "Show settings of powered by notice"
+msgstr "Visa inställningar för \"Powered by\" meddelande"
+
+#: lib/wpdev-settings-general.php:1076
+msgid "Hide settings of powered by notice"
+msgstr "Dölj inställningar för \"Powered by\" meddelande"
+
+#: lib/wpdev-settings-general.php:1084
+msgid "Powered by notice"
+msgstr "\"Powered by\" meddelande"
+
+#: lib/wpdev-settings-general.php:1089
+msgid " Turn On/Off powered by \"Booking Calendar\" notice under the calendar."
+msgstr " Visa/dölj meddelandet \"Powered by Booking Calendar\" under kalendern."
+
+#: lib/wpdev-settings-general.php:1099
+msgid "Help and info notices"
+msgstr "Hjälp och info meddelande"
+
+#: lib/wpdev-settings-general.php:1105
+msgid " Turn On/Off version notice and help info links at booking admin panel."
+msgstr " Stäng Av/På versions notis och hjälp info länkar vid administratörens bokningspanelen."
+
+#: lib/wpdev-settings-general.php:1134
+msgid "Information"
+msgstr "Information"
+
+#: lib/wpdev-settings-general.php:1163
+msgid "User permissions for plugin menu pages"
+msgstr "Behörigheter för bokningskalenderns sidor"
+
+#: lib/wpdev-settings-general.php:1223
+msgid "Select user access level for the menu pages of plugin"
+msgstr "Ange användares behörighetsnivåer för tilläggets menysidor"
+
+#: lib/wpdev-settings-general.php:1233
+msgid "Uninstall / deactivation"
+msgstr "Avinstallera / Avaktivera"
+
+#: lib/wpdev-settings-general.php:1237
+msgid "Delete booking data, when plugin deactivated"
+msgstr "Radera bokningsdata, när tillägget Avaktiveras"
+
+#: lib/wpdev-settings-general.php:1242
+msgid "If you check this option, all booking data will be deleted when you uninstall this plugin. Do you really want to do this?"
+msgstr "Om du väljer detta kommer alla bokningar att raderas när tillägget avinstalleras. Vill du verkligen göra detta?"
+
+#: lib/wpdev-settings-general.php:1244
+msgid "Check this box to delete all booking data when you uninstal this plugin."
+msgstr "Markera denna ruta för att radera alla bokningar när tillägget avinstalleras."
+
+#: lib/wpdev-settings-general.php:1371
+msgid "Show legend below calendar"
+msgstr "Visa förklaring under kalender"
+
+#: lib/wpdev-settings-general.php:1379
+msgid "Check this box to display a legend of dates below the booking calendar."
+msgstr "Markera denna ruta för att visa förklaringar till dagarnas utseende under kalendern."
+
+#: lib/wpdev-settings-general.php:1389
+msgid "Available item"
+msgstr "Tillgänglig enhet"
+
+#: lib/wpdev-settings-general.php:1395
+msgid "Activate and type your %stitle of available%s item in legend"
+msgstr "Aktivera och skriv din %stitel på tillgänglig%s enhet i förklaring."
+
+#: lib/wpdev-settings-general.php:1401
+msgid "Pending item"
+msgstr "Reserverad enhet"
+
+#: lib/wpdev-settings-general.php:1407
+msgid "Activate and type your %stitle of pending%s item in legend"
+msgstr "Aktivera och skriv din %stitel på reserverad%s enhet i förklaring."
+
+#: lib/wpdev-settings-general.php:1413
+msgid "Approved item"
+msgstr "Godkänd enhet"
+
+#: lib/wpdev-settings-general.php:1419
+msgid "Activate and type your %stitle of approved%s item in legend"
+msgstr "Aktivera och skriv din %stitel på godkänd%s enhet i förklaring."
+
+#: lib/wpdev-settings-general.php:1425
+msgid "Partially booked item"
+msgstr "Delvis bokad enhet"
+
+#: lib/wpdev-settings-general.php:1431
+msgid "Activate and type your %stitle of partially booked%s item in legend"
+msgstr "Aktivera och skriv din %stitel på delvis bokad%s enhet i förklaring."
+
+#: lib/wpdev-settings-general.php:1432
+msgid "Partially booked item - day, which is booked for the specific time-slot(s)."
+msgstr "Delvis bokad enhet - dag, som är bokad specifik tid."
+
+#: lib/wpdev-settings-general.php:1466
+msgid "Form fields labels"
+msgstr "Rubriker för formulärfält"
+
+#: lib/wpdev-settings-general.php:1490 lib/wpdev-settings-general.php:1533
+#: lib/wpdev-settings-general.php:1678
+msgid "Field Label"
+msgstr "Rubrik för fält"
+
+#: lib/wpdev-settings-general.php:1507 lib/wpdev-settings-general.php:1550
+#: lib/wpdev-settings-general.php:1595 lib/wpdev-settings-general.php:1641
+#: lib/wpdev-settings-general.php:1695 lib/wpdev-settings-general.php:1738
+msgid "Required"
+msgstr "Krävs"
+
+#: lib/wpdev-settings-general.php:1510 lib/wpdev-settings-general.php:1553
+#: lib/wpdev-settings-general.php:1653 lib/wpdev-settings-general.php:1698
+#: lib/wpdev-settings-general.php:1741
+msgid "Activate or deactivate field and change the label title"
+msgstr "Aktivera eller Avaktivera fält och ändra deras rubriker"
+
+#: lib/wpdev-settings-general.php:1578
+msgid "Email Label"
+msgstr "E-post Rubrik"
+
+#: lib/wpdev-settings-general.php:1598
+msgid "Change the label title of this field. Email is obligatory field in booking form."
+msgstr "Byt rubrik på detta fält. E-post är obligatorisk i bokningsformuläret."
+
+#: lib/wpdev-settings-general.php:1624
+msgid "Selectbox Label"
+msgstr "\"Selectbox\"-rubrik "
+
+#: lib/wpdev-settings-general.php:1647
+msgid "Selectbox Values"
+msgstr "\"Selectbox\"-värden"
+
+#: lib/wpdev-settings-general.php:1654
+msgid "Enter dropdown options. One option per line."
+msgstr "Fyll i \"dropdown\"-inställningar. Ett alternativ per linje."
+
+#: lib/wpdev-settings-general.php:1721
+msgid "Textarea Label"
+msgstr "Rubrik Textruta"
+
+#: lib/wpdev-settings-general.php:2015
+msgid "For example: \"You have a new reservation %s on the following date(s): %s Contact information: %s You can approve or cancel this booking at: %s Thank you, Reservation service.\""
+msgstr "Exempel: \"Du har en ny reservation %s följande datum: %s Kontakt information: %s Du kan godkänna eller avbryta denna bokning här: %s Tack så mycket, Reservations service.\""
+
+#: lib/wpdev-settings-general.php:2089
+msgid "For example: \"Your reservation %s on these date(s): %s is processing now! We will send confirmation by email. %s Thank you, Reservation service.\""
+msgstr "Exempel: \"Din reservation %s följande datum: %s behandlas nu!: Vi kommer skicka en konfirmation via e-post. %s Tack så mycket, Reservations service.\""
+
+#: lib/wpdev-settings-general.php:2175
+msgid "For example: \"Your reservation %s on these date(s): %s has been approved.%s Thank you, Reservation service.\""
+msgstr "Exempel: \"Din reservation %s på följande datum: %s har godkänts.%s  Tack så mycket, Reservations service.\""
+
+#: lib/wpdev-settings-general.php:2301
+msgid "You can use (in subject and content of email template) any shortcodes, which you used in the booking form. Use the shortcodes in the same way as you used them in the content form at Settings Fields page."
+msgstr "Du kan använda alla \"shortcoder\" (i både ämne och innehållet av e-postmallen), som du använde i bokningsformuläret. Använd \"shortcoder\" på samma sätt som du använde dem i innehållsformuläret i Inställningarna på Fältsidan."
+
+#: lib/wpdev-settings-general.php:2309
+msgid "%s - inserting data info about the booking"
+msgstr "%s - fyller i information om bokningen"
+
+#: lib/wpdev-settings-general.php:2332 lib/wpdev-settings-general.php:2340
+msgid "%s - inserting your site URL "
+msgstr "%s - fyller i din hemsidas URL"
+
+#: lib/wpdev-settings-general.php:2333
+msgid "%s - inserting IP address of the user who made this action "
+msgstr "%s - fyller i IP adress från användare som utförde denna handling"
+
+#: lib/wpdev-settings-general.php:2334
+msgid "%s - inserting contents of the User-Agent: header from the current request, if there is one "
+msgstr "%s - fyller i innehåll från Användar-Agent: \"header\" från nuvarande förfrågan, om det finns någon"
+
+#: lib/wpdev-settings-general.php:2335
+msgid "%s - inserting address of the page (if any), where visitor make this action "
+msgstr "%s - fyller i sidans adress (om det finns någon), där besökare kan utföra denna handling"
+
+#: lib/wpdev-settings-general.php:2336
+msgid "%s - inserting date of this action "
+msgstr "%s - fyller i datum för denna handling"
+
+#: lib/wpdev-settings-general.php:2337
+msgid "%s - inserting time of this action "
+msgstr "%s - fyller i tid för denna handling"
+
+#: lib/wpdev-settings-general.php:2344
+msgid "%s - inserting moderate link of new booking "
+msgstr "%s - fyller i länk för ny bokning"
+
+#: lib/wpdev-settings-general.php:2348
+msgid "%s - inserting link to the page where visitor can edit the reservation,  (possible to use the %s parameter for setting different %s of this page. Example: %s )"
+msgstr "%s - fyller i länk till sida där besökare kan redigera reservationen, (det är möjligt att använda %s parametrar för att ställa in annorlunda %s för denna sida. Exempel: %s )"
+
+#: lib/wpdev-settings-general.php:2350
+msgid "%s - inserting link to the page where visitor can cancel the reservation, (possible to use the %s parameter for setting different %s of this page. Example: %s )"
+msgstr "%s - fyller i länk till sidan där besökare kan avbryta reservationen, (det är möjligt att använda %s parametrar för att ställa in annorlunda %s för denna sida. Exempel: %s )"
+
+#: lib/wpdev-settings-general.php:2352
+msgid "%s - inserting link to payment page where visitor can pay for the reservation  (possible to use the %s parameter for setting different %s of this page. Example: %s )"
+msgstr "%s - fyller i länk till betalningssida där besökare kan betala reservationen, (det är möjligt att använda %s parametrar för att ställa in annorlunda %s för denna sida. Exempel: %s )"
+
+#: lib/wpdev-settings-general.php:2356
+msgid "%s - add the reason for booking payment, you can enter it before sending email, "
+msgstr "%s - fyll i skälet för bokningsbetalningen, du kan fylla i det innan du skickar e-post, "
+
+#: lib/wpdev-settings-general.php:2360
+msgid "%s - add the reason booking was cancelled, you can enter it before sending email, "
+msgstr "%s - fyll i skälet för att bokningen avböjts, du kan fylla i det innan du skickar e-post"
+
+#: lib/wpdev-booking-class.php:1698
+msgid "Send"
+msgstr "Skicka"
+
+#: lib/wpdev-booking-class.php:1240
+msgid "Search"
+msgstr "Sök"
+
+#: lib/wpdev-booking-class.php:730
+msgid "Booking resources management"
+msgstr "Bokningsresurs hantering"
+
+#: lib/wpdev-settings-general.php:614 lib/wpdev-settings-general.php:650
+#: lib/wpdev-settings-general.php:950 lib/wpdev-settings-general.php:1432
+msgid "Note"
+msgstr "Notering"
+
+#: lib/wpdev-bk-timeline.php:765 lib/wpdev-booking-class.php:662
+#: lib/wpdev-settings-general.php:1194
+msgid "Resources"
+msgstr "Resurser"
+
+#: lib/wpdev-booking-class.php:466
+msgid "Help Info"
+msgstr "Hjälp Information"
+
+#: lib/wpdev-booking-class.php:651 lib/wpdev-booking-class.php:718
+#: lib/wpdev-settings-general.php:1180
+msgid "Add booking"
+msgstr "Lägg till bokning"
+
+#: lib/wpdev-booking-functions.php:392
+msgid "yes"
+msgstr "ja"
+
+#: lib/wpdev-settings-general.php:833 lib/wpdev-settings-general.php:834
+msgid "Cost"
+msgstr "Pris"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:153
+msgid "Su"
+msgstr "Sön"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:153
+msgid "Tu"
+msgstr "Tis"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:153
+msgid "Th"
+msgstr "Tor"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:153
+msgid "Sa"
+msgstr "Lör"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:442 lib/wpdev-settings-general.php:475
+msgid "Sunday"
+msgstr "Söndag"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:445 lib/wpdev-settings-general.php:487
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:446 lib/wpdev-settings-general.php:491
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:447 lib/wpdev-settings-general.php:495
+msgid "Friday"
+msgstr "Fredag"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:448 lib/wpdev-settings-general.php:499
+msgid "Saturday"
+msgstr "Lördag"
+
+#: lib/wpdev-settings-general.php:50
+msgid "Costs"
+msgstr "Kostnad"
+
+#: lib/wpdev-settings-general.php:38 lib/wpdev-settings-general.php:388
+msgid "Calendar"
+msgstr "Kalender"
+
+#: lib/wpdev-settings-general.php:586
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: lib/wpdev-settings-general.php:828 lib/wpdev-settings-general.php:829
+msgid "Resource"
+msgstr "Resurs"
+
+#: lib/wpdev-bk-timeline.php:949
+msgid "Payment"
+msgstr "Betalning"
+
+#: lib/wpdev-booking-class.php:1245
+msgid "Users"
+msgstr "Användare"
+
+#: lib/wpdev-booking-class.php:1741 lib/wpdev-booking-class.php:1788
+msgid "Wrong booking hash in URL (probably expired)"
+msgstr "Fel boknings-\"hash\" i URL (troligtvis utgången)"
+
+#: lib/wpdev-bk-timeline.php:225 lib/wpdev-bk-timeline.php:569
+msgid "Times"
+msgstr "Tider"
+
+#: lib/wpdev-booking-class.php:724 lib/wpdev-booking-class.php:1219
+msgid "General Settings"
+msgstr "Allmänna Inställningar"
+
+#: lib/wpdev-booking-widget.php:101
+msgid "Booking resource"
+msgstr "Bokningsresurs"
+
+#: lib/wpdev-booking-class.php:1987 lib/wpdev-booking-widget.php:26
+msgid "You need to use special shortcode [bookingedit] for booking editing."
+msgstr "Du behöver använda en särskild \"shortcode\" [bookingedit] för bokningsredigering."
+
+#: lib/wpdev-booking-widget.php:118
+msgid "Visible months"
+msgstr "Synliga månader"
+
+#: lib/wpdev-booking-widget.php:142
+msgid "%sImportant!!!%s Please note, if you show booking calendar (inserted into post/page) with widget at the same page, then the last will not be visible."
+msgstr "%sViktigt!!!%s Om du använder både bokningskalendern (i ett inlägg eller en sida) och denna \"widget\" på samma sida, kommer ej den sista att visas."
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:146
+#: lib/wpdev-bk-timeline.php:153
+msgid "M"
+msgstr "M"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:146
+#: lib/wpdev-bk-timeline.php:153
+msgid "W"
+msgstr "W"
+
+#: lib/wpdev-bk-timeline.php:116 lib/wpdev-bk-timeline.php:146
+#: lib/wpdev-bk-timeline.php:153
+msgid "F"
+msgstr "F"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Mon"
+msgstr "Mån"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Tue"
+msgstr "Tis"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Wed"
+msgstr "Ons"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Thu"
+msgstr "Tor"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Fri"
+msgstr "Fre"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Sat"
+msgstr "Lör"
+
+#: lib/wpdev-bk-timeline.php:122 lib/wpdev-bk-timeline.php:159
+#: lib/wpdev-bk-timeline.php:456 lib/wpdev-bk-timeline.php:462
+#: lib/wpdev-bk-timeline.php:468 lib/wpdev-bk-timeline.php:474
+#: lib/wpdev-bk-timeline.php:490 lib/wpdev-bk-timeline.php:496
+msgid "Sun"
+msgstr "Sön"
+
+#: lib/wpdev-bk-timeline.php:146
+msgid "T"
+msgstr "T"
+
+#: lib/wpdev-bk-timeline.php:146
+msgid "S"
+msgstr "S"
+
+#. #-#-#-#-#  tmp-booking.pot (Booking Calendar 6.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: lib/wpdev-booking-class.php:145
+msgid "Booking Calendar"
+msgstr "Bokningskalender"
+
+#: lib/wpdev-booking-class.php:341
+msgid "Statistic"
+msgstr "Statistik"
+
+#: lib/wpdev-booking-class.php:345
+msgid "New (unverified) booking(s)"
+msgstr "Nya (ej verifierade) bokningar"
+
+#: lib/wpdev-booking-class.php:349
+msgid "Pending booking(s)"
+msgstr "Reserverade bokning(ar)"
+
+#: lib/wpdev-booking-class.php:355
+msgid "Agenda"
+msgstr "Agenda"
+
+#: lib/wpdev-booking-class.php:359
+msgid "New booking(s) made today"
+msgstr "Nya bokningar idag"
+
+#: lib/wpdev-booking-class.php:363
+msgid "Bookings for today"
+msgstr "Bokningar till dagens datum"
+
+#: lib/wpdev-booking-class.php:377
+msgid "Upgrade to higher versions"
+msgstr "Uppgradera till nyare version"
+
+#: lib/wpdev-booking-class.php:394
+msgid "Current version"
+msgstr "Aktuell version"
+
+#: lib/wpdev-booking-class.php:397
+msgid "Version"
+msgstr "Version"
+
+#: lib/wpdev-booking-class.php:413
+msgid "Type"
+msgstr "Typ"
+
+#: lib/wpdev-booking-class.php:417
+msgid "Used for"
+msgstr "Används för"
+
+#: lib/wpdev-booking-class.php:426
+msgid "websites"
+msgstr "hemsidor"
+
+#: lib/wpdev-booking-class.php:428
+msgid "website"
+msgstr "hemsida"
+
+#: lib/wpdev-booking-class.php:434
+msgid "Release date"
+msgstr "Lanseringsdatum"
+
+#: lib/wpdev-booking-class.php:444
+msgid "Check Premium Features"
+msgstr "Undersök Premium-funktioner"
+
+#: lib/wpdev-booking-class.php:446 lib/wpdev-booking-class.php:1251
+#: lib/wpdev-booking-class.php:1252 lib/wpdev-booking-class.php:1260
+#: lib/wpdev-booking-class.php:1261
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: lib/wpdev-booking-class.php:448
+msgid "Explore Premium Features"
+msgstr "Undersök Premium-funktioner"
+
+#: lib/wpdev-booking-class.php:457
+msgid "Support"
+msgstr "Support"
+
+#: lib/wpdev-booking-class.php:462
+msgid "Getting Started"
+msgstr "Komma igång"
+
+#: lib/wpdev-booking-class.php:472
+msgid "Contact email"
+msgstr "Kontakt via e-post"
+
+#: lib/wpdev-booking-class.php:475
+msgid "Rate plugin (thanks:)"
+msgstr "Lämna omdöme om detta tillägg (tack:)"
+
+#: lib/wpdev-booking-class.php:538
+msgid "Warning !!!"
+msgstr "Varning !!!"
+
+#: lib/wpdev-booking-class.php:539
+msgid "All booking data will be deleted when the plugin is deactivated."
+msgstr "All bokningsinformation kommer att raderas när tillägget avaktiveras."
+
+#: lib/wpdev-booking-class.php:540
+msgid "If you want to save your booking data, please uncheck the %s\"Delete booking data\"%s at the"
+msgstr "Om du vill behålla bokningsinformationen, vänligen avmarkera %s\"Radera bokningar\"%s  på"
+
+#: lib/wpdev-booking-class.php:541
+msgid "settings page"
+msgstr "sida med inställningar"
+
+#: lib/wpdev-booking-class.php:591 lib/wpdev-booking-class.php:671
+#: lib/wpdev-booking-functions.php:2492 lib/wpdev-settings-general.php:1208
+msgid "Settings"
+msgstr "Inställningar"
+
+#: lib/wpdev-booking-class.php:595
+msgid "Check new functionality in this plugin update."
+msgstr "Se nya funktioner i denna tilläggsuppdatering."
+
+#: lib/wpdev-booking-class.php:595
+msgid "What's New"
+msgstr "Nyheter"
+
+#: lib/wpdev-booking-class.php:633
+msgid "Booking"
+msgstr "Bokning"
+
+#: lib/wpdev-booking-class.php:671
+msgid "Booking Calendar Settings"
+msgstr "Bokningskalender Inställningar"
+
+#: lib/wpdev-booking-class.php:681 lib/wpdev-booking-functions.php:2458
+#: lib/wpdev-settings-general.php:1167
+msgid "Bookings"
+msgstr "Bokningar"
+
+#: lib/wpdev-booking-class.php:712
+msgid "Bookings listing"
+msgstr "Bokningslista"
+
+#: lib/wpdev-booking-class.php:1139
+msgid "Send email notification to customer about this operation"
+msgstr "Meddela kunden via e-post"
+
+#: lib/wpdev-booking-class.php:1218
+msgid "General"
+msgstr "Allmänt"
+
+#: lib/wpdev-booking-class.php:1223
+msgid "Fields"
+msgstr "Fält"
+
+#: lib/wpdev-booking-class.php:1224
+msgid "Fields Settings"
+msgstr "Fältinställningar"
+
+#: lib/wpdev-booking-class.php:1227
+msgid "Emails"
+msgstr "E-post"
+
+#: lib/wpdev-booking-class.php:1228
+msgid "Emails Settings"
+msgstr "E-postsinställningar"
+
+#: lib/wpdev-booking-class.php:1235
+msgid "Payments"
+msgstr "Betalningar"
+
+#: lib/wpdev-booking-class.php:1236
+msgid "Payments Settings"
+msgstr "Betalningsinställningar"
+
+#: lib/wpdev-booking-class.php:1241
+msgid "Search Settings"
+msgstr "Sökinställningar"
+
+#: lib/wpdev-booking-class.php:1246
+msgid "Users Settings"
+msgstr "Användarinställningar"
+
+#: lib/wpdev-booking-class.php:1282
+msgid "Features"
+msgstr "Funktioner"
+
+#: lib/wpdev-booking-class.php:1282
+msgid "Live Demos"
+msgstr "Live Demo"
+
+#: lib/wpdev-booking-class.php:1282 lib/wpdev-booking-class.php:1284
+msgid "Contact"
+msgstr "Kontakt"
+
+#: lib/wpdev-booking-class.php:1282
+msgid "Buy"
+msgstr "Köp"
+
+#: lib/wpdev-booking-class.php:1569
+msgid "Calendar is loading..."
+msgstr "Kalender laddar..."
+
+#: lib/wpdev-booking-class.php:1749
+msgid "Booking resource type is not defined. Its can be, when at the URL is wrong booking hash."
+msgstr "Bokningsresurs typ är inte definierad. Det kan vara så att URL har fel boknings \"hash\"."
+
+#: lib/wpdev-booking-class.php:1894
+msgid "%sWarning! Booking calendar for this booking resource are already at the page, please check more about this issue at %sthis page%s"
+msgstr "%sVarning! Bokningskalender för denna bokningsresurs finns redan på sidan, du kan läsa mer om detta på %sdenna sida%s"
+
+#: lib/wpdev-booking-class.php:2082 lib/wpdev-booking-class.php:2084
+msgid "Wrong booking hash in URL. Probably hash is expired."
+msgstr "Fel boknings-\"hash\" i URL. Möjligtvis är \"hash\" utgången."
+
+#: lib/wpdev-booking-class.php:2088
+msgid "You do not set any parameters for booking editing"
+msgstr "Du har inte satt några parametrar för boknings redigering"
+
+#: lib/wpdev-booking-class.php:2207
+msgid "Thank you for your online booking. %s We will send confirmation of your booking as soon as possible."
+msgstr "Tack för din bokning online. %s Vi kommer att skicka en konfirmation på din bokning så fort som möjligt."
+
+#: lib/wpdev-booking-class.php:2287 lib/wpdev-booking-class.php:2292
+msgid "New booking"
+msgstr "Ny bokning"
+
+#: lib/wpdev-booking-class.php:2288
+msgid "You need to approve a new booking %s for: %s Person detail information:%s Currently a new booking is waiting for approval. Please visit the moderation panel%sThank you, %s"
+msgstr "Du behöver godkänna en ny bokning %s gällande datum: %s Personinformation:%s En ny bokning väntar på ditt godkännande. Var god och använd inställningspanelen%sTack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2294
+msgid "Your reservation %s for: %s is processing now! We will send confirmation by email. %sYou can edit this booking at this page: %s  Thank you, %s"
+msgstr "Din reservation %s gällande datum: %s bearbetas nu! Vi kommer skicka en konfirmation via e-post. %sDu kan redigera denna bokning på denna sida. %s Tack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2296
+msgid "Your reservation %s for: %s is processing now! We will send confirmation by email. %s Thank you, %s"
+msgstr "Din reservation %s gällande datum: %s bearbetas nu! Vi kommer skicka en konfirmation via e-post. %s Tack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2301
+msgid "Your booking has been approved"
+msgstr "Din bokning har godkänts"
+
+#: lib/wpdev-booking-class.php:2303
+msgid "Your reservation %s for: %s has been approved.%sYou can edit the booking on this page: %s Thank you, %s"
+msgstr "Din reservation %s gällande datum: %s har uppdaterats.%sDu kan redigera bokningen på denna sida: %s Tack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2304
+msgid "Your booking %s for: %s has been approved.%sThank you, %s"
+msgstr "Din bokning %s gällande datum: %s har blivit godkänd.%sTack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2307
+msgid "Your booking has been declined"
+msgstr "Din bokning har avböjts"
+
+#: lib/wpdev-booking-class.php:2308
+msgid "Your booking %s for: %s has been  canceled. %sThank you, %s"
+msgstr "Din bokning %s gällande datum: %s har blivit avbruten. %sTack så mycket, %s"
+
+#: lib/wpdev-booking-class.php:2318
+msgid "Booking form"
+msgstr "Bokningsformulär"
+
+#: lib/wpdev-booking-class.php:2329
+msgid "Available"
+msgstr "Tillgänglig"
+
+#: lib/wpdev-booking-class.php:2333
+msgid "Booked"
+msgstr "Bokad"
+
+#: lib/wpdev-booking-class.php:2336
+msgid "Partially booked"
+msgstr "Delvis bokad"
+
+#: lib/wpdev-booking-class.php:3079
+msgid "Technical support section"
+msgstr "Teknisk supportsektion"
+
+#: lib/wpdev-booking-class.php:3083
+msgid "Reindex booking data"
+msgstr "Indexera om bokningar"
+
+#: lib/wpdev-booking-class.php:3085
+msgid "Reindex"
+msgstr "Indexera om"
+
+#: lib/wpdev-booking-class.php:3091
+msgid " Click, if you want to reindex booking data by booking dates sort field (Your installation/update of the plugin must be successful)."
+msgstr " Klicka på knappen om du vill indexera om bokningar per sorteringsfält för bokningsdatum. (Detta kräver att installationen/uppdateringen av tillägget lyckades)."
+
+#: lib/wpdev-booking-class.php:3136
+msgid "%s Found %s not indexed bookings %s"
+msgstr "%s Hittade %s bokningar som inte indexerats %s"
+
+#: lib/wpdev-booking-class.php:3151
+msgid "%s Finish getting sort dates. %s"
+msgstr "%s Avsluta hämtning av sorteringsdatum. %s"
+
+#: lib/wpdev-booking-class.php:3160
+msgid "Updated booking: %s"
+msgstr "Uppdaterad bokning: %s"
+
+#: lib/wpdev-booking-functions.php:396
+msgid "no"
+msgstr "inga"
+
+#: lib/wpdev-booking-functions.php:1336 lib/wpdev-booking-functions.php:1783
+msgid "Booking system"
+msgstr "Bokningssystem"
+
+#: lib/wpdev-booking-functions.php:2600
+msgid "Warning! Some error occur, during sending registration request."
+msgstr "Varning! Vissa fel uppstod, när registrings begäran skickades."
+
+#: lib/wpdev-booking-functions.php:2605
+msgid "Please refresh this page and if the same error appear again contact support by email (with  info about order number and website) for finishing the registrations"
+msgstr "Var god och uppdatera denna sida och om samma fel uppstår igen kontakta support via e-post (med info om order nummer och hemsida) för att avsluta registreringen"
+
+#: lib/wpdev-booking-functions.php:2665
+msgid "version"
+msgstr "version"
+
+#: lib/wpdev-booking-functions.php:2667
+msgid "Add your %s on %swordpress.org%s, if you enjoyed by this plugin."
+msgstr "Lägg till din %s på %swordpress.org%s, om du gillade detta tillägg."
+
+#: lib/wpdev-booking-widget.php:133
+msgid "Footer"
+msgstr "Sidfot"
+
+#: lib/wpdev-booking-widget.php:138
+msgid "Example: %sMake booking here%s"
+msgstr "Exempel: %sGör bokning här%s"
+
+#: lib/wpdev-booking-widget.php:146
+msgid "%sSeveral widgets are supported at %spaid versions%s."
+msgstr "%sFlera \"widget\" stöds a %sbetalda versioner%s."
+
+#: lib/wpdev-settings-general.php:41 lib/wpdev-settings-general.php:574
+msgid "Form"
+msgstr "Formulär"
+
+#: lib/wpdev-settings-general.php:53
+msgid "Auto cancellation / approval"
+msgstr "Automatisk avbokning / godkänande"
+
+#: lib/wpdev-settings-general.php:63 lib/wpdev-settings-general.php:924
+msgid "Advanced"
+msgstr "Avancerad"
+
+#: lib/wpdev-settings-general.php:67
+msgid "Menu access"
+msgstr "Menytillgänglighet"
+
+#: lib/wpdev-settings-general.php:70
+msgid "Uninstall"
+msgstr "Avinstallera"
+
+#: lib/wpdev-settings-general.php:73
+msgid "Technical"
+msgstr "Teknisk "
+
+#: lib/wpdev-settings-general.php:362
+msgid "Settings saved"
+msgstr "Inställningar sparade"
+
+#: lib/wpdev-settings-general.php:392
+msgid "Calendar Skin"
+msgstr "KalenderTema"
+
+#: lib/wpdev-settings-general.php:416
+msgid "Select the skin of the booking calendar"
+msgstr "Välj tema för bokningskalendern"
+
+#: lib/wpdev-settings-general.php:421
+msgid "Number of months"
+msgstr "Visa period"
+
+#: lib/wpdev-settings-general.php:426
+msgid "month(s)"
+msgstr "månad(er)"
+
+#: lib/wpdev-settings-general.php:431
+msgid "year(s)"
+msgstr "år"
+
+#: lib/wpdev-settings-general.php:434
+msgid "Select the maximum number of months to show (scroll)"
+msgstr "Välj hur lång period som ska vara tillgänglig i bokningskalendern."
+
+#: lib/wpdev-settings-general.php:439
+msgid "Start Day of the week"
+msgstr "Veckan börjar med"
+
+#: lib/wpdev-settings-general.php:450
+msgid "Select your start day of the week"
+msgstr "Välj vilket som är veckans första dag."
+
+#: lib/wpdev-settings-general.php:457
+msgid "Unavailable days from today"
+msgstr "Obokningsbara dagar från idag"
+
+#: lib/wpdev-settings-general.php:464
+msgid "Select number of unavailable days in calendar start from today."
+msgstr "Ange hur långt framåt som är låst för bokningar."
+
+#: lib/wpdev-settings-general.php:471
+msgid "Unavailable week days"
+msgstr "Otillgängliga veckodagar"
+
+#: lib/wpdev-settings-general.php:501
+msgid "Check unavailable days in calendars. This option will overwrite all other settings."
+msgstr "Ange vilka veckodagar som inte kan bokas i kalendern. Detta val överskrider alla andra inställningar."
+
+#: lib/wpdev-settings-general.php:511
+msgid "Type of days selection in calendar"
+msgstr "Bokningsbar period i kalender"
+
+#: lib/wpdev-settings-general.php:514
+msgid "Type of days selection"
+msgstr "Bokningsbar period"
+
+#: lib/wpdev-settings-general.php:527
+msgid "Single day"
+msgstr "Enstaka dag"
+
+#: lib/wpdev-settings-general.php:537
+msgid "Multiple days"
+msgstr "Multipla dagar"
+
+#: lib/wpdev-settings-general.php:548
+msgid "Range days"
+msgstr "Datumperiod"
+
+#: lib/wpdev-settings-general.php:589
+msgid "Check the box to activate CAPTCHA inside the booking form."
+msgstr "Markera för att använda \"CAPTCHA\" i bokningsformuläret."
+
+#: lib/wpdev-settings-general.php:596
+msgid "Auto-fill fields"
+msgstr "Autofyll fält"
+
+#: lib/wpdev-settings-general.php:599
+msgid "Check the box to activate auto-fill form fields for logged in users."
+msgstr "Markera för att aktivera automatisk ifyllnad av formulärfält för inloggade användare."
+
+#: lib/wpdev-settings-general.php:606
+msgid "Use CSS BootStrap"
+msgstr "Använd \"BootStrap CSS\""
+
+#: lib/wpdev-settings-general.php:611
+msgid "Using BootStrap CSS for the form fields"
+msgstr "Använd \"BootStrap CSS\" för formulärfälten"
+
+#: lib/wpdev-settings-general.php:614
+msgid "You must not deactivate loading BootStrap files at advanced section of these settings!"
+msgstr "Laddning av \"BootStrap\"-filer får inte vara avstängt i avancerade sektionen!"
+
+#: lib/wpdev-settings-general.php:631
+msgid "Action after booking is done"
+msgstr "Handling efter att bokning är klar"
+
+#: lib/wpdev-settings-general.php:639
+msgid "Show \"Thank You\" message"
+msgstr "Visa \"Tack så mycket\" meddelande"
+
+#: lib/wpdev-settings-general.php:646
+msgid "Redirect visitor to a new \"Thank You\" page"
+msgstr "Skicka vidare besökare till en ny \"Tack så mycket\" sida"
+
+#: lib/wpdev-settings-general.php:650
+msgid "This action will have no effect, if the payment form(s) is active!"
+msgstr "Denna handling kommer inte ha någon effekt, om betalningsformuläret inte är aktivt!"
+
+#: lib/wpdev-settings-general.php:659
+msgid "Message title"
+msgstr "Meddelande rubrik"
+
+#: lib/wpdev-settings-general.php:662
+msgid "Type title of message %safter booking has done by user%s"
+msgstr "Medelanderubrik %sefter genomförd bokning av användare%s"
+
+#: lib/wpdev-settings-general.php:667
+msgid "Time of message showing"
+msgstr "Tid som meddelande visas"
+
+#: lib/wpdev-settings-general.php:670
+msgid "Set duration of time (milliseconds) to show this message"
+msgstr "Ställ in tid (millisekunder) som detta meddelande visas"
+
+#: lib/wpdev-settings-general.php:677
+msgid "URL of \"thank you\" page"
+msgstr "URL till \"Tack-sidan\""
+
+#: lib/wpdev-settings-general.php:682
+msgid "Type URL of %s\"Thank You\" page%s"
+msgstr "Ange URL till %s\"Tack\"-sidan%s"
+
+#: lib/wpdev-settings-general.php:697
+msgid "Listing of bookings"
+msgstr "Lista med bokningar"
+
+#: lib/wpdev-settings-general.php:700
+msgid "Default booking admin page"
+msgstr "Standard Admin-bokningssida"
+
+#: lib/wpdev-settings-general.php:703
+msgid "Bookings Listing"
+msgstr "Bokningslista"
+
+#: lib/wpdev-settings-general.php:711
+msgid "Select your default view mode of bookings at the booking listing page"
+msgstr "Välj standardvy för bokningsöversikten"
+
+#: lib/wpdev-settings-general.php:721
+msgid "Default calendar view mode"
+msgstr "Standard Kalendervy"
+
+#: lib/wpdev-settings-general.php:773
+msgid "Select your default calendar view mode at booking calendar overview page"
+msgstr "Välj standard kalendervy för bokningsöversikten"
+
+#: lib/wpdev-settings-general.php:783
+msgid "Default toolbar tab"
+msgstr "Standardflik i verktygsfältet"
+
+#: lib/wpdev-settings-general.php:785
+msgid "Filter tab"
+msgstr "Filter"
+
+#: lib/wpdev-settings-general.php:786
+msgid "Actions tab"
+msgstr "Aktiviteter"
+
+#: lib/wpdev-settings-general.php:793
+msgid "Select your default opened tab in toolbar at booking listing page"
+msgstr "Välj vilken flik som ska visas som standard i bokningslistan"
+
+#: lib/wpdev-settings-general.php:798
+msgid "Bookings number per page"
+msgstr "Antal bokningar per sida"
+
+#: lib/wpdev-settings-general.php:807
+msgid "Select number of bookings per page in booking listing"
+msgstr "Ange hur många bokningar som ska visas per sida i bokningslistan"
+
+#: lib/wpdev-settings-general.php:813
+msgid "Bookings default order"
+msgstr "Standardsortering"
+
+#: lib/wpdev-settings-general.php:816 lib/wpdev-settings-general.php:818
+#: lib/wpdev-settings-general.php:828 lib/wpdev-settings-general.php:833
+msgid "ASC"
+msgstr "(lägst först)"
+
+#: lib/wpdev-settings-general.php:817 lib/wpdev-settings-general.php:819
+#: lib/wpdev-settings-general.php:829 lib/wpdev-settings-general.php:834
+msgid "DESC"
+msgstr "(högst först)"
+
+#: lib/wpdev-settings-general.php:842
+msgid "Select your default order of bookings in the booking listing"
+msgstr "Ange standardsortering i bokningslistan"
+
+#: lib/wpdev-settings-general.php:853
+msgid "Date Format"
+msgstr "Datumformat"
+
+#: lib/wpdev-bk-lib.php:1419 lib/wpdev-bk-lib.php:1806
+#: lib/wpdev-bk-lib.php:1821 lib/wpdev-bk-lib.php:2206
+msgid "Actions"
+msgstr "Handling"
+
+#: lib/wpdev-bk-lib.php:1742 lib/wpdev-bk-lib.php:2046
+msgid "Delete"
+msgstr "Radera"
+
+#: lib/wpbc-gcal.php:742 lib/wpdev-bk-lib.php:1853
+msgid "Default"
+msgstr "Förvald"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:144
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:485
+#: lib/wpdev-bk-edit-toolbar-buttons.php:493
+msgid "Description"
+msgstr "Beskrivning"
+
+#: lib/wpbc-gcal.php:853 lib/wpbc-notices.php:25
+msgid "Warning!"
+msgstr "Varning!"
+
+#: lib/wpbc-gcal.php:805 lib/wpdev-bk-lib.php:299
+#: lib/wpdev-settings-general.php:2326
+msgid "day"
+msgstr "dag"
+
+#: lib/wpbc-gcal.php:618 lib/wpbc-gcal.php:682 lib/wpbc-gcal.php:808
+#: lib/wpdev-bk-lib.php:300 lib/wpdev-bk-lib.php:301 lib/wpdev-bk-lib.php:302
+#: lib/wpdev-bk-lib.php:303 lib/wpdev-bk-lib.php:304
+msgid "days"
+msgstr "dagar"
+
+#: lib/wpdev-bk-lib.php:1552 lib/wpdev-settings-general.php:1955
+#: lib/wpdev-settings-general.php:2036 lib/wpdev-settings-general.php:2108
+#: lib/wpdev-settings-general.php:2197
+msgid "Status"
+msgstr "Status"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:443 lib/wpdev-settings-general.php:479
+msgid "Monday"
+msgstr "Måndag"
+
+#: lib/wpdev-bk-timeline.php:110 lib/wpdev-bk-timeline.php:134
+#: lib/wpdev-bk-timeline.php:135 lib/wpdev-bk-timeline.php:140
+#: lib/wpdev-bk-timeline.php:449 lib/wpdev-bk-timeline.php:484
+#: lib/wpdev-settings-general.php:444 lib/wpdev-settings-general.php:483
+msgid "Tuesday"
+msgstr "Tisdag"
+
+#: lib/wpdev-bk-lib.php:562 lib/wpdev-bk-lib.php:612
+#: lib/wpdev-settings-general.php:871
+msgid "Custom"
+msgstr "Anpassad"
+
+#: lib/wpdev-bk-lib.php:1497
+msgid "Go"
+msgstr "Sök"
+
+#: lib/wpbc-gcal.php:901 lib/wpdev-bk-lib.php:523 lib/wpdev-bk-lib.php:586
+#: lib/wpdev-bk-lib.php:642
+msgid "Close"
+msgstr "Stäng"
+
+#: lib/wpbc-gcal.php:799
+msgid "hour"
+msgstr "timma"
+
+#: lib/wpbc-gcal.php:617 lib/wpbc-gcal.php:681 lib/wpbc-gcal.php:802
+msgid "hours"
+msgstr "timmar"
+
+#: lib/wpbc-gcal.php:913
+msgid "Export only current page of bookings to CSV format"
+msgstr "Exportera endast aktuell sida med bokningar till CSV"
+
+#: lib/wpdev-bk-lib.php:1806
+msgid "Labels"
+msgstr "Etikett"
+
+#: lib/wpdev-bk-lib.php:1548 lib/wpdev-bk-lib.php:2006
+#: lib/wpdev-settings-general.php:2400
+msgid "Approved"
+msgstr "Godkänd"
+
+#: lib/wpdev-bk-lib.php:1547 lib/wpdev-bk-lib.php:2005
+#: lib/wpdev-booking-class.php:2331
+msgid "Pending"
+msgstr "Reserverad"
+
+#: lib/wpdev-bk-lib.php:1955
+msgid "Unknown"
+msgstr "Okänd"
+
+#: lib/wpdev-bk-lib.php:2077
+msgid "Created"
+msgstr "Skapad"
+
+#: lib/wpdev-bk-lib.php:1952
+msgid "Paid OK"
+msgstr "Betalning OK"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:373
+msgid "Booking resource:"
+msgstr "Bokningsresurs:"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:393
+msgid "Visible months:"
+msgstr "Synliga månader:"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:408
+msgid "Select number of month to show for calendar."
+msgstr "Ange hur många månader som ska visas i kalendern."
+
+#: lib/wpdev-bk-lib.php:1577
+msgid "All bookings"
+msgstr "Alla bokningar"
+
+#: lib/wpbc-gcal.php:862 lib/wpdev-booking-functions.php:1759
+#: lib/wpdev-settings-general.php:2015
+msgid "here"
+msgstr "här"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:381
+msgid "Select booking resource"
+msgstr "Välj bokningsresurs"
+
+#: lib/wpbc-gcal.php:616 lib/wpbc-gcal.php:680
+msgid "minutes"
+msgstr "minuter"
+
+#: lib/wpbc-gcal.php:625
+msgid "You can specify an additional offset from you chosen start point. The offset can be negative."
+msgstr "Du kan specificera ytterligare offset från din valda startpunkt. Denna offset kan vara negativ."
+
+#: lib/wpbc-gcal.php:628 lib/wpbc-gcal.php:692
+msgid "Type your date in format %s. Example: %s"
+msgstr "Skriv in ditt datum i format %s. Exempel: %s"
+
+#: lib/wpbc-gcal.php:645
+msgid "Until"
+msgstr "Tills"
+
+#: lib/wpbc-gcal.php:663
+msgid "The end of time"
+msgstr "Sluttid"
+
+#: lib/wpbc-gcal.php:671
+msgid "Select option, when to stop retrieving events."
+msgstr "Välj, när du vill sluta hämtningen av events."
+
+#: lib/wpbc-gcal.php:689
+msgid "You can specify an additional offset from you chosen end point. The offset can be negative."
+msgstr "Du kan specificera ytterligare offset från din valda sluttid. Denna offset kan vara negativ."
+
+#: lib/wpbc-gcal.php:705
+msgid "Maximum number"
+msgstr "Högsta antal"
+
+#: lib/wpbc-gcal.php:708
+msgid "You can specify the maximum number of events to import during one session."
+msgstr "Du kan specificera ett maximalt antal events att importera under en session."
+
+#: lib/wpbc-gcal.php:719
+msgid "Google API Key"
+msgstr "Google API Nyckel"
+
+#: lib/wpbc-gcal.php:721
+msgid "Please enter your Google API key. This field required to import events."
+msgstr "Fyll i din Google API Nyckel. Detta fält krävs för att importera events."
+
+#: lib/wpbc-gcal.php:723
+msgid "You can check in this %sinstruction how to generate and use your Google API key%s."
+msgstr "Du kan hitta hjälp här. %sInstruktion för att skapa och använda din Google API Nyckel%s."
+
+#: lib/wpbc-gcal.php:737
+msgid "Timezone"
+msgstr "Tidszon"
+
+#: lib/wpbc-gcal.php:771
+msgid "Select a city in your required timezone, if you are having problems with dates and times."
+msgstr "Välj en stad i din tidszon, om du har problem med datum och tider."
+
+#: lib/wpbc-gcal.php:781
+msgid "Activate auto import"
+msgstr "Aktivera automatisk import"
+
+#: lib/wpbc-gcal.php:787
+msgid "Check this box to %sactivate%s auto import events and creation bookings from them"
+msgstr "Markera denna ruta för att %saktivera%s automatisk import av händelser och skapa bokningsformulär med hjälp av dessa"
+
+#: lib/wpbc-gcal.php:794
+msgid "Import events every"
+msgstr "Importera Events varje"
+
+#: lib/wpbc-gcal.php:812
+msgid "Select time duration of import requests."
+msgstr "Välj importbegärans tidsvaraktighet."
+
+#: lib/wpbc-gcal.php:855
+msgid "Retrieve Google Calendar Events "
+msgstr "Hämta Google Kalender Events "
+
+#: lib/wpbc-gcal.php:861
+msgid "Please configure settings for import Google Calendar events"
+msgstr "Var god och konfigurera inställningar för import av Google Kalender events"
+
+#: lib/wpbc-gcal.php:889
+msgid "Configure"
+msgstr "Konfigurera"
+
+#: lib/wpbc-gcal.php:899 lib/wpbc-gcal.php:905
+msgid "Import Google Calendar Events"
+msgstr "Importera Google Kalender Events"
+
+#: lib/wpbc-gcal.php:170 lib/wpbc-gcal.php:912
+msgid "Import"
+msgstr "Importera"
+
+#: lib/wpbc-notices.php:26
+msgid "Probabaly you updated your paid version of Booking Calendar by free version or update process failed. You can request the new update of your paid version at %1sthis page%2s."
+msgstr "Du uppdaterade nog din betalda version av Boknings Kalendern med gratis version eller så misslyckades uppdateringsprocessen. Du kan begära en ny uppdatering av din betalda version på %1sdenna sida%2s."
+
+#: lib/wpbc-scripts.php:57
+msgid "This field is required"
+msgstr "Detta fält krävs"
+
+#: lib/wpbc-scripts.php:58
+msgid "This checkbox must be checked"
+msgstr "Denna \"checkbox\" måste vara ifylld"
+
+#: lib/wpbc-scripts.php:59
+msgid "At least one option must be selected"
+msgstr "Åtminstone ett val måste vara aktivt"
+
+#: lib/wpbc-scripts.php:60
+msgid "Incorrect email field"
+msgstr "Felaktigt e-post fält"
+
+#: lib/wpbc-scripts.php:61
+msgid "Your emails do not the same"
+msgstr "Dina e-postadresser matchar inte"
+
+#: lib/wpbc-scripts.php:62
+msgid "Please, select booking date(s) at Calendar."
+msgstr "Var vänlig välj boknings datum i Kalendern."
+
+#: lib/wpbc-welcome.php:770 lib/wpbc-welcome.php:1219
+#: lib/wpdev-booking-class.php:379 lib/wpdev-settings-general.php:1306
+msgid "Purchase"
+msgstr "Köp"
+
+#: lib/wpbc-welcome.php:770 lib/wpbc-welcome.php:1219 lib/wpdev-bk-lib.php:695
+#: lib/wpdev-booking-class.php:379 lib/wpdev-settings-general.php:1306
+msgid "Upgrade Now"
+msgstr "Uppgradera nu"
+
+#: lib/wpbc-welcome.php:1397
+msgid "We&#8217;ve assembled some links to get you started:"
+msgstr "Vi har sammanfattat några länkar för att hjälpa dig komma igång:"
+
+#: lib/wpbc-welcome.php:1400
+msgid "Get Started"
+msgstr "Komma igång"
+
+#: lib/wpbc-welcome.php:1403
+msgid "Insert booking form %sshortcode%s into your %sPost%s or %sPage%s"
+msgstr "Skriv in bokningsformulärets-%s\"shortcode\"%s i ett %sInlägg%s eller en %sSida%s"
+
+#: lib/wpbc-welcome.php:1411
+msgid "or add booking calendar %sWidget%s to your sidebar."
+msgstr "eller lägg till en kalender %sWidget%s i sidopanelen."
+
+#: lib/wpbc-welcome.php:1417
+msgid "Check %show todo%s that and what %sshortcodes%s are available."
+msgstr "Läs %shur de används%s och vilka %s\"shortcoder\"%s som finns tillgängliga."
+
+#: lib/wpbc-welcome.php:1423
+msgid "Add new booking from your post/page or from %sAdmin Panel%s."
+msgstr "Lägg till bokningar från inlägg/sida eller från %sAdmin Panelen%s."
+
+#: lib/wpbc-welcome.php:1430
+msgid "Next Steps"
+msgstr "Nästa Steg"
+
+#: lib/wpbc-welcome.php:1433
+msgid "Check %sBooking Listing%s page for new bookings."
+msgstr "Hitta nya bokningar i %sBokningslistan%s."
+
+#: lib/wpbc-welcome.php:1439
+msgid "Configure booking %sSettings%s."
+msgstr "Ändra Boknings %sInställningar%s."
+
+#: lib/wpbc-welcome.php:1444
+msgid "Configure predefined set of your %sForm Fields%s."
+msgstr "Anpassa fördefinierade %sFormulärfälten%s."
+
+#: lib/wpbc-welcome.php:1449
+msgid "Configure your predefined %sEmail Templates%s."
+msgstr "Anpassa fördefinierade %sE-postmallar%s."
+
+#: lib/wpbc-welcome.php:1456
+msgid "Have a questions?"
+msgstr "Frågor?"
+
+#: lib/wpbc-welcome.php:1459
+msgid "Check out our %sHelp%s"
+msgstr "Läs vår %sOnline Hjälp%s"
+
+#: lib/wpbc-welcome.php:1464
+msgid "See %sFAQ%s."
+msgstr "Läs %sFAQ%s."
+
+#: lib/wpbc-welcome.php:1469
+msgid "Still having questions? Contact %sSupport%s."
+msgstr "Har du fortfarande frågor? Kontakta %sSupport%s."
+
+#: lib/wpbc-welcome.php:1477
+msgid "Need even more functionality? Check %s higher versions %s"
+msgstr "Behöver du ännu fler funktioner? Försök med %s nyare versioner %s"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:30
+msgid "Insert booking calendar"
+msgstr "Lägg till boknings kalender"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:31 lib/wpdev-booking-class.php:644
+msgid "Booking calendar"
+msgstr "Bokningskalender"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:143
+#: lib/wpdev-bk-edit-toolbar-buttons.php:165
+msgid "Ok"
+msgstr "Ok"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:414
+msgid "Start month:"
+msgstr "Startmånad:"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:424
+msgid "Select start month of calendar"
+msgstr "Välj start månad i kalender"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:431
+msgid "Show in the page:"
+msgstr "Visa i sida:"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:437 lib/wpdev-booking-widget.php:91
+msgid "Booking form with calendar"
+msgstr "Bokningsformulär med kalender"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:438 lib/wpdev-booking-widget.php:92
+msgid "Only availability calendar"
+msgstr "Endast tillgänglighetskalender"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:439
+msgid "Only booking form"
+msgstr "Endast bokningsformulär"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:444
+msgid "for"
+msgstr "för"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:447
+msgid "date"
+msgstr "datum"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:451
+msgid "Select to show the entire booking form or the availability calendar only."
+msgstr "Välj för att visa hela bokningsformuläret eller tillgänglighetskalendern endast."
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:466
+msgid "Show advanced settings"
+msgstr "Visa avancerade inställningar"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:467
+msgid "Hide advanced settings"
+msgstr "Dölj avancerade inställningar"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:471
+msgid "Setting advanced parameters of the calendar. %sLike width, height and structure %s"
+msgstr "Avancerade Inställningar för kalendern. %sSom bredd, höjd och struktur %s"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:473
+msgid "%s or minimum and fixed number of days selection for the specific day of week or season.%s"
+msgstr "%s eller minsta och fast antal valda dagar för specifika dagar av veckan eller säsongen.%s"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:479
+msgid "Please read more about the possible customizations of these %soptions%s %shere%s"
+msgstr "Du kan läsa mer om konfigurationer av dessa %sval%s %shär%s"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:480
+msgid "Options:"
+msgstr "Val:"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:483
+msgid "Specify the full width of calendar, height of date cell and number of months in one row. "
+msgstr "Specificera kalenderns fullbredden, höjden på datum cellerna och antalet månader i en rad."
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:486
+msgid "Calendar have 2 months in a row, the cell height is 30px and calendar full width 568px (possible to use percentage for width: 100%)"
+msgstr "Kalendern har 2 månader i en rad, cellens höjd är 30px och kalenders fullbredd är 568px (det är möjligt att använda procent för bredd: 100%)"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:487
+#: lib/wpdev-bk-edit-toolbar-buttons.php:495
+msgid "Code Example"
+msgstr "Exempelkod"
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:491
+msgid "Specify that during certain seasons (or days of week), the specific minimum number of days must be booked. "
+msgstr "Specificera att under vissa säsonger (eller dagar i veckan), måste ett minst antal dagar bokas. "
+
+#: lib/wpdev-bk-edit-toolbar-buttons.php:494
+msgid "Visitor can select only 4 days starting at Monday, 3 or 7 days – Friday, 2 days – Saturday, etc…"
+msgstr "Besökare kan endast välja 4 dagar om valet börjande på Måndagar, 3 eller 7 dagar - Fredagar, 2 dagar - Lördagar, etc..."
+
+#: lib/wpdev-bk-lib.php:305
+msgid "week"
+msgstr "vecka"
+
+#: lib/wpdev-bk-lib.php:306
+msgid "weeks"
+msgstr "veckor"
+
+#: lib/wpdev-bk-lib.php:307
+msgid "month"
+msgstr "månad"
+
+#: lib/wpdev-bk-lib.php:308 lib/wpdev-bk-lib.php:309 lib/wpdev-bk-lib.php:310
+msgid "months"
+msgstr "månader"
+
+#: lib/wpdev-bk-lib.php:311 lib/wpdev-bk-lib.php:2283
+#: lib/wpdev-settings-general.php:733 lib/wpdev-settings-general.php:739
+msgid "Year"
+msgstr "år"
+
+#: lib/wpdev-bk-lib.php:314
+msgid "Current dates"
+msgstr "Aktuella datum"
+
+#: lib/wpdev-bk-lib.php:315
+msgid "Today"
+msgstr "Idag"
+
+#: lib/wpdev-bk-lib.php:316
+msgid "Previous dates"
+msgstr "Tidigare datum"
+
+#: lib/wpdev-bk-lib.php:317
+msgid "All dates"
+msgstr "Alla datum"
+
+#: lib/wpdev-bk-lib.php:318 lib/wpdev-bk-lib.php:439 lib/wpdev-bk-lib.php:2141
+msgid "Next"
+msgstr "Nästa"
+
+#: lib/wpdev-bk-lib.php:319 lib/wpdev-bk-lib.php:462
+msgid "Prior"
+msgstr "Föreg."
+
+#: lib/wpdev-bk-lib.php:321
+msgid "Check In - Tomorrow"
+msgstr "Incheckning - Imorgon"
+
+#: lib/wpdev-bk-lib.php:322
+msgid "Check Out - Tomorrow"
+msgstr "Utcheckning - Imorgon"
+
+#: lib/wpdev-bk-lib.php:487
+msgid "Check-in"
+msgstr "Incheckning"
+
+#: lib/wpdev-bk-lib.php:497
+msgid "Check-out"
+msgstr "Utcheckning"
+
+#: lib/wpdev-bk-lib.php:520 lib/wpdev-bk-lib.php:582 lib/wpdev-bk-lib.php:638
+#: lib/wpdev-bk-lib.php:1508
+msgid "Apply"
+msgstr "Uppdatera"
+
+#: lib/wpdev-bk-lib.php:620
+msgid "Start Date"
+msgstr "Start Datum"
+
+#: lib/wpdev-bk-lib.php:662 lib/wpdev-settings-general.php:44
+msgid "Booking Listing"
+msgstr "Bokningslista"
+
+#: lib/wpdev-bk-lib.php:666 lib/wpdev-settings-general.php:704
+msgid "Calendar Overview"
+msgstr "Kalenderöversikt"
+
+#: lib/wpdev-bk-lib.php:675
+msgid "Booking Calendar - Overview"
+msgstr "Bokningskalender - Översikt"
+
+#: lib/wpdev-bk-lib.php:683 lib/wpdev-bk-lib.php:691
+msgid "Help"
+msgstr "Hjälp"
+
+#: lib/wpdev-bk-lib.php:689
+msgid "About Booking Calendar"
+msgstr "Om Bokningskalender"
+
+#: lib/wpdev-bk-lib.php:692 lib/wpdev-booking-class.php:469
+#: lib/wpdev-booking-class.php:1282 lib/wpdev-booking-class.php:1284
+msgid "FAQ"
+msgstr "FAQ"
+
+#: lib/wpdev-bk-lib.php:693
+msgid "Technical Support"
+msgstr "Teknisk support"
+
+#: lib/wpdev-bk-lib.php:1409
+msgid "Filter"
+msgstr "Filtrera"
+
+#: lib/wpdev-bk-lib.php:1454
+msgid "Expand Advanced Filter"
+msgstr "Avancerat pris"
+
+#: lib/wpdev-bk-lib.php:1455
+msgid "Collapse Advanced Filter"
+msgstr "Dölj Avancerat filter"
+
+#: lib/wpdev-bk-lib.php:1472
+msgid "Send email notification to customer after approval, cancellation or deletion of bookings"
+msgstr "Meddela kunden via e-post om godkända, avbokade eller raderade bokningar"
+
+#: lib/wpdev-bk-lib.php:1473
+msgid "Emails sending"
+msgstr "Skicka e-post"
+
+#: lib/wpdev-bk-lib.php:1496
+msgid "Booking ID"
+msgstr "Boknings ID"
+
+#: lib/wpdev-bk-lib.php:1505
+msgid "Refresh booking listing"
+msgstr "Uppdatera Bokningslista"
+
+#: lib/wpdev-bk-lib.php:1509
+msgid "Reset filter to default values"
+msgstr "Återställ filtret till förvalda värden"
+
+#: lib/wpdev-bk-lib.php:1550
+msgid "Any"
+msgstr "Alla"
+
+#: lib/wpdev-bk-lib.php:1578
+msgid "New bookings"
+msgstr "Nya bokning(ar)"
+
+#: lib/wpdev-bk-lib.php:1581 lib/wpdev-booking-widget.php:87
+msgid "Show"
+msgstr "Visa"
+
+#: lib/wpdev-bk-lib.php:1593
+msgid "Creation"
+msgstr "Skapad"
+
+#: lib/wpdev-bk-lib.php:1627
+msgid "Order by"
+msgstr "Sortera efter"
+
+#: lib/wpdev-bk-lib.php:1641
+msgid "Save filter settings as default template (Please, click Apply filter button, before saving!)"
+msgstr "Spara filterinställningar som Standardmall (Var god, och klicka på Uppdateraknappen, innan du sparar!)"
+
+#: lib/wpdev-bk-lib.php:1644
+msgid "Save as Default"
+msgstr "Spara som Standard"
+
+#: lib/wpdev-bk-lib.php:1649
+msgid "Delete your previously saved default filer template!"
+msgstr "Ta bort tidigare sparad Standardfiltermall!"
+
+#: lib/wpdev-bk-lib.php:1652
+msgid "Delete template"
+msgstr "Radera mall"
+
+#: lib/wpdev-bk-lib.php:1723
+msgid "Approve selected bookings"
+msgstr "Godkänn markerade bokningar"
+
+#: lib/wpdev-bk-lib.php:1727 lib/wpdev-bk-lib.php:2036
+msgid "Approve"
+msgstr "Godkänn"
+
+#: lib/wpdev-bk-lib.php:1728
+msgid "Set selected bookings as pending"
+msgstr "Sätt markerade bokningar som reserverade."
+
+#: lib/wpdev-bk-lib.php:1730 lib/wpdev-bk-lib.php:2040
+msgid "Do you really want to set booking as pending ?"
+msgstr ""
+"Vill du verkligen ändra status på bokning till reserverad?\n"
+"OBS! Om \"Skicka e-post\", på denna sida, är markerad kommer Avböjs e-post (om aktivt) att skickas till kund."
+
+#: lib/wpdev-bk-lib.php:1733 lib/wpdev-bk-lib.php:2041
+msgid "Reject"
+msgstr "Avböj"
+
+#: lib/wpdev-bk-lib.php:1736
+msgid "Delete selected bookings"
+msgstr "Radera valda bokningar"
+
+#: lib/wpdev-bk-lib.php:1743
+msgid "Reason of cancellation"
+msgstr "Anledning till avslag"
+
+#: lib/wpdev-bk-lib.php:1748
+msgid "Mark as read all bookings"
+msgstr "Markera alla bokningar som Lästa"
+
+#: lib/wpdev-bk-lib.php:1752
+msgid "Read All"
+msgstr "Alla lästa"
+
+#: lib/wpdev-bk-lib.php:1753
+msgid "Mark as read selected bookings"
+msgstr "Markera valda bokningar som Lästa"
+
+#: lib/wpdev-bk-lib.php:1757
+msgid "Read"
+msgstr "Läst"
+
+#: lib/wpdev-bk-lib.php:1758
+msgid "Mark as Unread selected bookings"
+msgstr "Markera valda bokningar som Olästa"
+
+#: lib/wpdev-bk-lib.php:1762 lib/wpdev-bk-lib.php:1978
+msgid "Unread"
+msgstr "Oläst"
+
+#: lib/wpdev-bk-lib.php:1807
+msgid "Booking Data"
+msgstr "Bokningsinformation"
+
+#: lib/wpdev-bk-lib.php:1808
+msgid "Booking Dates"
+msgstr "Bokningsdatum"
+
+#: lib/wpdev-bk-lib.php:1813
+msgid "Show ALL dates of booking"
+msgstr "Visa ALLA Bokningsdatum"
+
+#: lib/wpdev-bk-lib.php:1818
+msgid "Show only check in/out dates"
+msgstr "Visa endast in/ut checknings datum"
+
+#: lib/wpdev-bk-lib.php:1825
+msgid "Nothing found!"
+msgstr "Hittade inget!"
+
+#: lib/wpdev-bk-lib.php:1861
+msgid "Resource not exist"
+msgstr "Resursen hittades inte"
+
+#: lib/wpdev-bk-lib.php:1978
+msgid "Mark"
+msgstr "Markera"
+
+#: lib/wpdev-bk-lib.php:2045
+msgid "Do you really want to delete this booking ?"
+msgstr "Vill du verkligen radera bokning?"
+
+#: lib/wpdev-bk-lib.php:2123
+msgid "Prev"
+msgstr "Föreg"
+
+#: lib/wpdev-bk-lib.php:2272 lib/wpdev-bk-lib.php:2304
+msgid "Show month"
+msgstr "Visa månad"
+
+#: lib/wpdev-bk-lib.php:2275 lib/wpdev-bk-lib.php:2307
+#: lib/wpdev-settings-general.php:728 lib/wpdev-settings-general.php:737
+msgid "Month"
+msgstr "Månad"
+
+#: lib/wpdev-bk-lib.php:2276
+msgid "Show 3 months"
+msgstr "Visa tre månader"
+
+#: lib/wpdev-bk-lib.php:2279 lib/wpdev-settings-general.php:732
+#: lib/wpdev-settings-general.php:738
+msgid "3 Months"
+msgstr "Tre månader"
+
+#: lib/wpdev-bk-lib.php:2280
+msgid "Show year"
+msgstr "Visa ett helt år"
+
+#: lib/wpdev-bk-lib.php:2289 lib/wpdev-bk-lib.php:2323
+msgid "Calendar view mode"
+msgstr "Kalendeläge"
+
+#: lib/wpdev-bk-lib.php:2296
+msgid "Show day"
+msgstr "Visa dag"
+
+#: lib/wpdev-bk-lib.php:2299 lib/wpdev-settings-general.php:725
+msgid "Day"
+msgstr "Dag"
+
+#: lib/wpdev-bk-lib.php:2300
+msgid "Show week"
+msgstr "Visa vecka"
+
+#: lib/wpdev-bk-lib.php:2303 lib/wpdev-settings-general.php:726
+msgid "Week"
+msgstr "Vecka"
+
+#: lib/wpdev-bk-lib.php:2308
+msgid "Show 2 months"
+msgstr "Visa 2 månader"
+
+#: lib/wpdev-bk-lib.php:2311 lib/wpdev-settings-general.php:730
+msgid "2 Months"
+msgstr "2 Månader"
+
+#: lib/wpdev-bk-lib.php:2349 lib/wpdev-bk-lib.php:2363
+#: lib/wpdev-bk-lib.php:2410
+msgid "Previous 4 weeks"
+msgstr "Föregående 4 veckor"
+
+#: lib/wpdev-bk-lib.php:2350 lib/wpdev-bk-lib.php:2364
+#: lib/wpdev-bk-lib.php:2411
+msgid "Previous week"
+msgstr "Föregående vecka"
+
+#: lib/wpdev-bk-lib.php:2351 lib/wpdev-bk-lib.php:2365
+#: lib/wpdev-bk-lib.php:2412
+msgid "Current week"
+msgstr "Aktuell vecka"
+
+#: lib/wpdev-bk-lib.php:2352 lib/wpdev-bk-lib.php:2366
+#: lib/wpdev-bk-lib.php:2413
+msgid "Next week"
+msgstr "Nästa vecka"
+
+#: lib/wpdev-bk-lib.php:2353 lib/wpdev-bk-lib.php:2367
+#: lib/wpdev-bk-lib.php:2414
+msgid "Next 4 weeks"
+msgstr "Nästa 4 veckor"
+
+#: lib/wpdev-bk-lib.php:2377 lib/wpdev-bk-lib.php:2427
+#: lib/wpdev-bk-lib.php:2442
+msgid "Previous 3 months"
+msgstr "Föregående 3 månader"
+
+#: lib/wpdev-bk-lib.php:2378 lib/wpdev-bk-lib.php:2428
+#: lib/wpdev-bk-lib.php:2443
+msgid "Previous month"
+msgstr "Föregående månad"
+
+#: lib/wpdev-bk-lib.php:2379 lib/wpdev-bk-lib.php:2429
+#: lib/wpdev-bk-lib.php:2444
+msgid "Current month"
+msgstr "Aktuell månad"
+
+#: lib/wpdev-bk-lib.php:2380 lib/wpdev-bk-lib.php:2430
+#: lib/wpdev-bk-lib.php:2445
+msgid "Next month"
+msgstr "Nästa månad"
+
+#: lib/wpdev-bk-lib.php:2381 lib/wpdev-bk-lib.php:2431
+#: lib/wpdev-bk-lib.php:2446
+msgid "Next 3 months"
+msgstr "Nästa 3 månader"
+
+#: lib/wpdev-bk-lib.php:2395
+msgid "Previous 7 days"
+msgstr "Tidigare 7 dagar"
+
+#: lib/wpdev-bk-lib.php:2396
+msgid "Previous day"
+msgstr "Tidigare dag"
+
+#: lib/wpdev-bk-lib.php:2397
+msgid "Current day"
+msgstr "Befintlig dag"
+
+#: lib/wpdev-bk-lib.php:2398
+msgid "Next day"
+msgstr "Nästa dag"
+
+#: lib/wpdev-bk-lib.php:2399
+msgid "Next 7 days"
+msgstr "Nästa 7 dagar"
+
+#: lib/wpdev-bk-lib.php:2470
+msgid "Calendar Navigation"
+msgstr "Kalendernavigering"
+
+#: lib/wpbc-gcal-class.php:580 lib/wpbc-gcal-class.php:611
+#: lib/wpdev-bk-lib.php:1561 lib/wpdev-bk-lib.php:1618
+#: lib/wpdev-bk-lib.php:1621 lib/wpdev-bk-timeline.php:766
+#: lib/wpdev-settings-general.php:818 lib/wpdev-settings-general.php:819
+msgid "Dates"
+msgstr "Datum"
+
+#: lib/wpbc-class-settings.php:46 lib/wpdev-settings-general.php:75
+#: lib/wpdev-settings-general.php:1258 lib/wpdev-settings-general.php:1760
+#: lib/wpdev-settings-general.php:2287 lib/wpdev-settings-general.php:2415
+msgid "Save Changes"
+msgstr "Spara Ändringar"
+
+#: lib/wpbc-gcal.php:311 lib/wpbc-gcal.php:331 lib/wpbc-gcal.php:349
+#: lib/wpbc-gcal.php:420 lib/wpdev-booking-class.php:3078
+#: lib/wpdev-settings-general.php:387 lib/wpdev-settings-general.php:573
+#: lib/wpdev-settings-general.php:696 lib/wpdev-settings-general.php:923
+#: lib/wpdev-settings-general.php:1133 lib/wpdev-settings-general.php:1162
+#: lib/wpdev-settings-general.php:1232 lib/wpdev-settings-general.php:1465
+#: lib/wpdev-settings-general.php:1949 lib/wpdev-settings-general.php:2029
+#: lib/wpdev-settings-general.php:2102 lib/wpdev-settings-general.php:2189
+msgid "Click to toggle"
+msgstr "Klicka för att växla"
+
+#: lib/wpbc-gcal-class.php:577 lib/wpbc-gcal-class.php:595
+#: lib/wpdev-bk-lib.php:1617 lib/wpdev-bk-lib.php:1620
+#: lib/wpdev-bk-lib.php:1999 lib/wpdev-settings-general.php:816
+#: lib/wpdev-settings-general.php:817
+msgid "ID"
+msgstr "ID"
+
+#: lib/wpbc-gcal-class.php:578 lib/wpbc-gcal-class.php:597
+#: lib/wpdev-booking-widget.php:79
+msgid "Title"
+msgstr "Rubrik"
+
+#: lib/wpbc-ajax.php:213
+msgid "Deleted"
+msgstr "Raderad"
+
+#: lib/wpbc-gcal.php:581 lib/wpdev-settings-general.php:1977
+#: lib/wpdev-settings-general.php:2051 lib/wpdev-settings-general.php:2137
+#: lib/wpdev-settings-general.php:2226
+msgid "From"
+msgstr "Från"
+
+#: lib/wpbc-gcal-class.php:635 lib/wpbc-notices.php:104
+#: lib/wpdev-settings-general.php:937 lib/wpdev-settings-general.php:1622
+msgid "Hide"
+msgstr "Dölj "
+
+#: lib/wpbc-gcal-class.php:579 lib/wpbc-gcal-class.php:601
+msgid "Info"
+msgstr "Info"
+
+#: lib/wpbc-gcal-class.php:594
+msgid "Selection"
+msgstr "Val"
+
+#: lib/wpbc-booking-new.php:124
+msgid "Updating..."
+msgstr "Uppdaterar..."
+
+#: lib/wpbc-gcal.php:516 lib/wpbc-gcal.php:929
+msgid "None"
+msgstr "Ingen"
+
+#: lib/wpbc-gcal-class.php:444 lib/wpbc-gcal.php:102
+msgid "Done"
+msgstr "Färdig"
+
+#: lib/wpbc-booking-new.php:148 lib/wpbc-booking-new.php:150
+msgid "Updated successfully"
+msgstr "Uppdatering lyckad"
+
+#: lib/wpbc-gcal.php:184
+msgid "Google Calendar"
+msgstr "Google Kalender "
+
+#: lib/wpbc-gcal.php:185
+msgid "Customization of synchronization with Google Calendar"
+msgstr "Google Kalender - synkroniseringskonfiguration"
+
+#: lib/wpbc-gcal.php:391
+msgid "Google Calendar ID"
+msgstr "Google Kalender ID"
+
+#: lib/wpbc-ajax.php:30
+msgid "%sError!%s Request do not pass security check! Please refresh the page and try one more time."
+msgstr "%sFel!%s Begäran passerar inte säkerhetskontroll! Var vänlig att uppdatera sidan och försök igen."
+
+#: lib/wpbc-ajax.php:109
+msgid "Set as Read"
+msgstr "Markera som Läst"
+
+#: lib/wpbc-ajax.php:109
+msgid "Set as Unread"
+msgstr "Markera som Oläst"
+
+#: lib/wpbc-ajax.php:166
+msgid "Set as Approved"
+msgstr "Markera som Godkänd"
+
+#: lib/wpbc-ajax.php:166
+msgid "Set as Pending"
+msgstr "Markera som Reserverad"
+
+#: lib/wpbc-ajax.php:184
+msgid "Reason for cancellation here"
+msgstr "Anledning till avslag här"
+
+#: lib/wpbc-ajax.php:185
+msgid "Reason of cancellation here"
+msgstr "Anledning till att ångra här"
+
+#: lib/wpbc-booking-new.php:37
+msgid "The code you entered is incorrect"
+msgstr "Koden du skrev in är felaktig"
+
+#: lib/wpbc-booking-new.php:654
+msgid "Error!"
+msgstr "Fel!"
+
+#: lib/wpbc-booking-new.php:655
+msgid "Probably these date(s) just was booking by other visitor. Please reload this page and make booking again."
+msgstr "Dessa datum bokades möjligtvis precis av en annan besökare. Var vänlig att uppdatera sidan och försök igen."
+
+#: lib/wpbc-class-dismiss.php:80 lib/wpbc-welcome.php:1381
+msgid "Dismiss"
+msgstr "Avfärda"
+
+#: lib/wpbc-gcal-class.php:293
+msgid "Importing Feed"
+msgstr "Viktig \"Feed\""
+
+#: lib/wpbc-gcal-class.php:309
+msgid "Data Parsing"
+msgstr "Data behandlas"
+
+#: lib/wpbc-gcal-class.php:416
+msgid "Some data was retrieved, but could not be parsed successfully. Please ensure your feed URL is correct."
+msgstr "Viss data hämtades, med blev inte fullständigt tolkad. Var god och säkerställ att din URL \"feed\" är korrekt."
+
+#: lib/wpbc-gcal-class.php:422
+msgid "The feed could not be found (404). Please ensure your feed URL is correct."
+msgstr "Denna \"feed\" kunde inte hittas (404). Var god och garantera att din URL \"feed\" är korrekt."
+
+#: lib/wpbc-gcal-class.php:425
+msgid "Access to this feed was denied (403). Please ensure you have public sharing enabled for your calendar."
+msgstr "Nekad tillgång till denna tråd (403). Var god och säkerställ att du har publik delning aktiverad för din kalender."
+
+#: lib/wpbc-gcal-class.php:428
+msgid "The feed data could not be retrieved. Error code: %s. Please ensure your feed URL is correct."
+msgstr "Denna \"feed\" kunde inte hämtas. Felkod: %s.  Var god och säkerställ att din URL \"feed\" är korrekt."
+
+#: lib/wpbc-gcal-class.php:581 lib/wpbc-gcal-class.php:626
+msgid "GID"
+msgstr "GID"
+
+#: lib/wpbc-gcal-class.php:605
+msgid "Location:"
+msgstr "Plats:"
+
+#: lib/wpbc-gcal-class.php:633
+msgid "Reload page"
+msgstr "Uppdatera Sida"
+
+#: lib/wpbc-gcal-class.php:637 lib/wpdev-bk-lib.php:1738
+msgid "Do you really want to delete selected booking(s) ?"
+msgstr "Vill du verkligen radera valda bokning(ar)?"
+
+#: lib/wpbc-gcal-class.php:645
+msgid "Delete selected booking(s)"
+msgstr "Radera valda bokning(ar)"
+
+#: lib/wpbc-gcal.php:103
+msgid "Imported 0 events."
+msgstr "Importerade 0 events."
+
+#: lib/wpbc-gcal.php:171
+msgid "Synchronization Bookings Settings"
+msgstr "Synkroniseringskonfiguration för bokningsenheter"
+
+#: lib/wpbc-gcal.php:184
+msgid "Events Import"
+msgstr "Importera events"
+
+#: lib/wpbc-gcal.php:312
+msgid "Assign events fields to specific booking form field"
+msgstr "Tilldela event fält till ett specifikt bokningsformulär"
+
+#: lib/wpbc-gcal.php:332
+msgid "Auto import events"
+msgstr "Automatisk import av events"
+
+#: lib/wpbc-gcal.php:350
+msgid "Google Calendar - General Settings"
+msgstr "Google Kalender - Generella Inställningar."
+
+#: lib/wpbc-gcal.php:377
+msgid "Default settings for retrieving events"
+msgstr "Förvalda inställningar för hämtning av events"
+
+#: lib/wpbc-gcal.php:421
+msgid "Google Calendar - Help Info"
+msgstr "Google Kalender - Hjälp Info"
+
+#: lib/wpbc-gcal.php:430
+msgid "To get Google Calendar API key please follow this instruction"
+msgstr "För att erhålla en Google Kalender API nyckel, vänligen följ dessa instruktioner"
+
+#: lib/wpbc-gcal.php:432
+msgid "Go to Google Developer Console: %s."
+msgstr "Gå till Google Utvecklar-Konsol: %s."
+
+#: lib/wpbc-gcal.php:433
+msgid "Give your project a name and click \"Create\"."
+msgstr "Ge ditt projekt ett namn och klicka på \"Skapa(Create)\"."
+
+#: lib/wpbc-gcal.php:434
+msgid "In the sidebar click on \"APIs & auth\"."
+msgstr "I sidomenyn klicka på \"APIs & auth\""
+
+#: lib/wpbc-gcal.php:435
+msgid "Click APIs and make sure \"Calendar API\" is set to ON."
+msgstr "Klicka APIs och säkerställ att \"Kalender API\" är satt till PÅ(ON)."
+
+#: lib/wpbc-gcal.php:436
+msgid "Now click on \"Credentials\" in the sidebar."
+msgstr "Nu klicka på \"Credentials\" i sidomenyn"
+
+#: lib/wpbc-gcal.php:437
+msgid "Under the section \"Public API access\" click the button \"Create new Key\"."
+msgstr "Under \"Public API access\" klicka på knappen \"Create new Key\"."
+
+#: lib/wpbc-gcal.php:438
+msgid "On the popup click the button \"Server Key\" and click \"Create\"."
+msgstr "I popup-rutan klicka knappen \"Server Key\" och sen på \"Create\"."
+
+#: lib/wpbc-gcal.php:439
+msgid "You will now see a table loaded with the top item being the API Key. Copy this and paste it into %sGoogle API Key%s field at this page."
+msgstr "Nu visas en tabell med det översta raden innehållande API nyckeln. Kopiera denna och klistra in den i fältet %sGoogle API Nyckel%s på sidan."
+
+#: lib/wpbc-gcal.php:445
+msgid "Set Your Calendar to Public"
+msgstr "Ställ in din Kalender som Publik"
+
+#: lib/wpbc-gcal.php:447 lib/wpbc-gcal.php:455
+msgid "Navigate to your Google calendars."
+msgstr "Navigera till din Google Kalender(ar)."
+
+#: lib/wpbc-gcal.php:448 lib/wpbc-gcal.php:456
+msgid "Open the settings for the calendar."
+msgstr "Öppna inställningarna för kalendern."
+
+#: lib/wpbc-gcal.php:449
+msgid "Click the \"Share this Calendar\" link."
+msgstr "Klicka på länken \"Dela denna Kalender\"."
+
+#: lib/wpbc-gcal.php:450
+msgid "Click the checkbox to make calendar public. Do not check the other option."
+msgstr "Klicka på \"checkboxen\" för att göra kalendern publik. Klicka inte i andra alternativ."
+
+#: lib/wpbc-gcal.php:453
+msgid "Find Your Calendar ID"
+msgstr "Hitta Din Kalenders ID"
+
+#: lib/wpbc-gcal.php:457
+msgid "Now copy the Calendar ID to use in the plugin settings in your WordPress admin. Make sure to %suse the Calendar ID only, not the entire XML feed URL%s."
+msgstr "Kopiera Kalender ID för att använda i tilläggets inställningarna i din Wordpress admin. Säkerställ att %sendast använda Kalender ID, inte hela \"XML feed URL\"%s."
+
+#: lib/wpbc-gcal.php:557
+msgid "Select field for assigning to %sevent property%s"
+msgstr "Välj fält som du vill tilldela till %sevent behörighet%s"
+
+#: lib/wpbc-gcal.php:567
+msgid "Event Title"
+msgstr "Event Rubrik"
+
+#: lib/wpbc-gcal.php:568
+msgid "Event Description (optional field)"
+msgstr "Event Beskrivning (valfritt fält)"
+
+#: lib/wpbc-gcal.php:569
+msgid "Location"
+msgstr "Plats"
+
+#: lib/wpbc-gcal.php:594 lib/wpbc-gcal.php:658
+msgid "Now"
+msgstr "Nu"
+
+#: lib/wpbc-gcal.php:595 lib/wpbc-gcal.php:659
+msgid "00:00 today"
+msgstr "00:00 idag"
+
+#: lib/wpbc-gcal.php:596 lib/wpbc-gcal.php:660
+msgid "Start of current week"
+msgstr "Start av aktuell vecka"
+
+#: lib/wpbc-gcal.php:597 lib/wpbc-gcal.php:661
+msgid "Start of current month"
+msgstr "Start av aktuell månad"
+
+#: lib/wpbc-gcal.php:598 lib/wpbc-gcal.php:662
+msgid "End of current month"
+msgstr "Slut av aktuell månad"
+
+#: lib/wpbc-gcal.php:599
+msgid "The start of time"
+msgstr "Starttid"
+
+#: lib/wpbc-gcal.php:600 lib/wpbc-gcal.php:664
+msgid "Specific date / time"
+msgstr "Specifikt datum / tid"
+
+#: lib/wpbc-gcal.php:607
+msgid "Select option, when to start retrieving events."
+msgstr "Välj, när du vill påbörja hämtningen av events."
+
+#: lib/wpbc-gcal.php:609 lib/wpbc-gcal.php:673
+msgid "Offset"
+msgstr "Offset"
+
+#: lib/wpbc-gcal.php:609 lib/wpbc-gcal.php:673
+msgid "Enter date / time"
+msgstr "Fyll i datum / tid"
+
+#: lib/wpbc-gcal.php:615 lib/wpbc-gcal.php:679
+msgid "seconds"
+msgstr "sekunder"
