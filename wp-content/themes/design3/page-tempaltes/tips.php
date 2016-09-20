@@ -10,25 +10,7 @@ get_header();
 	<div class="container">
 		<div class="container-wrap">
 		<div id="tricks" class="col-md-8 col-sm-6">
-		<div class="facebook-header">
-		<a href="https://www.facebook.com/trepebilvard/">
-		<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			<?php
-				if ( have_posts() ) {
-					while ( have_posts() ) {
-						the_post();
-						//print_r($post);
-						//
-						// Post Content here
-						the_content();
-						//
-					} // end while
-				} // end if
-			?>
 
-			<div class="clearfix"></div>
-			</a>
-			</div>
 			<div class="clearfix"></div>
 			<div class="tips-wrap">
 			<?php $query8 = new WP_Query(array( 'post_type' => 'tips', 'post_per_page' => -1) );
