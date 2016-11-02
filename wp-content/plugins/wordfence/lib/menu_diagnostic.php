@@ -17,6 +17,11 @@ $w = new wfConfig();
 		Diagnostics
 	</h2>
 	<br clear="both"/>
+	
+	<?php
+	$rightRail = new wfView('marketing/rightrail', array('additionalClasses' => 'wordfenceRightRailDiagnostics'));
+	echo $rightRail;
+	?>
 
 	<form id="wfConfigForm">
 		<table class="wf-table"<?php echo !empty($inEmail) ? ' border=1' : '' ?>>
@@ -407,9 +412,22 @@ $w = new wfConfig();
 			</button>
 <!--			<em id="waf-rules-last-updated"></em>-->
 		</p>
+		<p><em id="waf-rules-next-update"></em></p>
 		<?php
 		try {
 			$lastUpdated = wfWAF::getInstance()->getStorageEngine()->getConfig('rulesLastUpdated');
+
+			$nextUpdate = PHP_INT_MAX;
+			$cron = wfWAF::getInstance()->getStorageEngine()->getConfig('cron');
+			if (is_array($cron)) {
+				/** @var wfWAFCronEvent $event */
+				foreach ($cron as $index => $event) {
+					$event->setWaf(wfWAF::getInstance());
+					if (!$event->isInPast()) {
+						$nextUpdate = min($nextUpdate, $event->getFireTime());
+					}
+				}
+			}
 		} catch (wfWAFStorageFileException $e) {
 			error_log($e->getMessage());
 		}
@@ -418,6 +436,13 @@ $w = new wfConfig();
 				var lastUpdated = <?php echo (int) $lastUpdated ?>;
 				WFAD.renderWAFRulesLastUpdated(new Date(lastUpdated * 1000));
 			</script>
+		<?php endif ?>
+
+		<?php if ($nextUpdate < PHP_INT_MAX): ?>
+		<script>
+			var nextUpdate = <?php echo (int) $nextUpdate ?>;
+			WFAD.renderWAFRulesNextUpdate(new Date(nextUpdate * 1000));
+		</script>
 		<?php endif ?>
 
 	</div>
@@ -450,15 +475,6 @@ $w = new wfConfig();
 				<td><input type="checkbox" id="startScansRemotely" class="wfConfigElem" name="startScansRemotely"
 				           value="1" <?php $w->cb('startScansRemotely'); ?> />
 					(Try this if your scans aren't starting and your site is publicly accessible)
-				</td>
-			</tr>
-			<tr>
-				<th>Disable config caching<a
-						href="http://docs.wordfence.com/en/Wordfence_options#Disable_config_caching" target="_blank"
-						class="wfhelp"></a></th>
-				<td><input type="checkbox" id="disableConfigCaching" class="wfConfigElem"
-				           name="disableConfigCaching" value="1" <?php $w->cb('disableConfigCaching'); ?> />
-					(Try this if your options aren't saving)
 				</td>
 			</tr>
 

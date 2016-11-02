@@ -12,17 +12,16 @@
             </div>
         </div>
 
-        <a href="https://goo.gl/9sD2sh" target="_blank" class="sucuriscan-ad-btn">Protect Your Website Today</a>
+        <a href="https://sucuri.net/lp/plugin/wp-pn-protect-wordpress" target="_blank" class="sucuriscan-ad-btn">Protect Your Website Today</a>
 
         <div class="sucuriscan-ad-footer">
             <ul>
-                <li>Sucuri CloudProxy Firewall</li>
-                <li class="featured">Stopping 33M+ attacks a month</li>
-                <li>Web Application Firewall Protection</li>
+                <li>Sucuri Firewall</li>
+                <li>Protection . Performance . Security</li>
+                <li class="featured">Cloud-based WAF + DDoS Protection</li>
                 <li>Virtual Website Patching</li>
-                <li>Cloud Intrusion Prevention System</li>
-                <li>High Security Website Monitoring</li>
-                <li>Malicious Traffic Filtering</li>
+                <li>Anycast CDN + Website Accelerator</li>
+                <li>All in one security for your site.</li>
             </ul>
         </div>
     </div>
@@ -33,7 +32,7 @@
             <h4>Blacklisted by Google?</h4>
         </div>
 
-        <a href="https://goo.gl/vEwZq6" target="_blank" class="sucuriscan-ad-btn">Get Clean Today</a>
+        <a href="https://sucuri.net/lp/plugin/wp-pn-clean-wordpress-hack" target="_blank" class="sucuriscan-ad-btn">Get Clean Today</a>
 
         <div class="sucuriscan-ad-footer sucuriscan-clearfix">
             <div class="sucuriscan-pull-left">
@@ -53,15 +52,16 @@
         </a>
     </div>
 
-    <iframe src="https://www.youtube-nocookie.com/embed/EVa9FY3nKuQ" height="250" class="sucuriscan-scanner-video" allowfullscreen></iframe>
-
     <a href="https://wordpress.org/support/plugin/sucuri-scanner" target="_blank"
     class="button button-primary sucuriscan-supportbtn">Visit Support Forum</a>
 
-    <form action="%%SUCURI.URL.Settings%%" method="post">
-        <input type="hidden" name="sucuriscan_page_nonce" value="%%SUCURI.PageNonce%%" />
-        <input type="hidden" name="sucuriscan_ads_visibility" value="disable" />
-        <button type="submit" class="button-link sucuriscan-hide-ads">Hide this column</button>
-    </form>
+    <div class="sucuriscan-hide-ads">
+        <button class="button-link sucuriscan-reveal"
+        data-target="hide-ads-instructions">Hide this column</button>
+        <div class="sucuriscan-hidden sucuriscan-hide-ads-instructions">
+            Add this to your wp-config.php file:<br>
+            <code>define('SUCURISCAN_HIDE_ADS', true);</code>
+        </div>
+    </div>
 
 </div>
