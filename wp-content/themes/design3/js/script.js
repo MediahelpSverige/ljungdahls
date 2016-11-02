@@ -7,13 +7,15 @@ $('.menu-item-has-children').click( function(){
 
   console.log(this);
 
-  $(this).children('.sub-menu').slideDown(200, stop());
+  $(this).children('.sub-menu').slideDown(200);
+  return false;
 
 });
 
 $('i.fa.fa-times').click(function(e){
   e.stopPropagation();
-  $(this).parent().slideUp(200, stop());
+  $(this).parent().slideUp(200);
+  return false;
 })
 
 
