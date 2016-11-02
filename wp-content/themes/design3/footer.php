@@ -5,9 +5,9 @@
 	<div class="container">
 		<div class="footer-info">
 			<div class="left-field">
-				<h3 class="footer-title">Begär offert</h3>
-				<p> Vi hjälper till med en bred mäbgt tjänster. Fyll i vårt formulär och begär en generell offert så återkommer vi till dig så fort vi kan</p>
-				<a class="btn-blue" href="<?php bloginfo('url');?>/offert">Begär offert</a>
+				<h3 class="footer-title">Kontakta oss idag</h3>
+				<p>Klicka på knappen nedan för att komma till vårt formulär. När du skickat iväg formuläret så ska vi försöka svara så fort som möjligt</p>
+				<a class="btn-blue" href="<?php bloginfo('url');?>/offert">Kontakta oss</a>
 			</div>
 			<div class="middle-field">
 			</div>
