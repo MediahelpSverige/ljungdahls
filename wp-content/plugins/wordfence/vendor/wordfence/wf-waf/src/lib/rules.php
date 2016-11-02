@@ -456,6 +456,8 @@ class wfWAFRuleComparison implements wfWAFRuleInterface {
 		'currentuseris',
 		'currentuserisnot',
 		'md5equals',
+		'filepatternsmatch',
+		'filehasphp',
 	);
 
 	/**
@@ -696,6 +698,158 @@ class wfWAFRuleComparison implements wfWAFRuleInterface {
 
 	public function md5Equals($subject) {
 		return md5((string) $subject) === $this->getExpected();
+	}
+	
+	public function filePatternsMatch($subject) {
+		$request = $this->getWAF()->getRequest();
+		$files = $request->getFiles();
+		$patterns = $this->getWAF()->getMalwareSignatures();
+		if (!is_array($patterns) || !is_array($files)) {
+			return false;
+		}
+		
+		foreach ($files as $file) {
+			if ($file['name'] == (string) $subject) {
+				$fh = @fopen($file['tmp_name'], 'r');
+				if (!$fh) {
+					continue;
+				}
+				$totalRead = 0;
+				
+				$readsize = max(min(10 * 1024 * 1024, wfWAFUtils::iniSizeToBytes(ini_get('upload_max_filesize'))), 1 * 1024 * 1024);
+				while (!feof($fh)) {
+					$data = fread($fh, $readsize);
+					$totalRead += strlen($data);
+					if ($totalRead < 1) {
+						return false;
+					}
+				
+					foreach ($patterns as $rule) {
+						if (preg_match('/(' . $rule . ')/i', $data, $matches)) {
+							return true;
+						}
+					}
+				}	
+			}
+		}
+		
+		return false;
+	}
+	
+	public function fileHasPHP($subject) {
+		$request = $this->getWAF()->getRequest();
+		$files = $request->getFiles();
+		if (!is_array($files)) {
+			return false;
+		}
+		
+		foreach ($files as $file) {
+			if ($file['name'] == (string) $subject) {
+				$fh = @fopen($file['tmp_name'], 'r');
+				if (!$fh) {
+					continue;
+				}
+				
+				$totalRead = 0;
+				$hasExecutablePHP = false;
+				$possiblyHasExecutablePHP = false;
+				$hasOpenParen = false;
+				$hasCloseParen = false;
+				$backtickCount = 0;
+				$wrappedTokenCheckBytes = '';
+				$maxTokenSize = 15; //__halt_compiler
+				$possibleWrappedTokens = array('<?php', '<?=', '<?', '?>', 'exit', 'new', 'clone', 'echo', 'print', 'require', 'include', 'require_once', 'include_once', '__halt_compiler');
+				
+				$readsize = 512 * 1024; //512k at a time
+				while (!feof($fh)) {
+					$data = fread($fh, $readsize);
+					$actualReadsize = strlen($data);
+					$totalRead += $actualReadsize;
+					if ($totalRead < 1) {
+						break;
+					}
+					
+					//Make sure we didn't miss PHP split over a chunking boundary
+					$wrappedCheckLength = strlen($wrappedTokenCheckBytes);
+					if ($wrappedCheckLength > 0) {
+						$testBytes = $wrappedTokenCheckBytes . substr($data, 0, min($maxTokenSize, $actualReadsize));
+						foreach ($possibleWrappedTokens as $t) {
+							$position = strpos($testBytes, $t);
+							if ($position !== false && $position < $wrappedCheckLength && $position + strlen($t) >= $wrappedCheckLength) { //Found a token that starts before this segment of data and ends within it
+								$data = substr($wrappedTokenCheckBytes, $position) . $data;
+								break;
+							}
+						}
+					}
+					
+					//Tokenize the data and check for PHP
+					$tokens = @token_get_all($data);
+					foreach ($tokens as $token) {
+						if (is_array($token)) {
+							switch ($token[0]) {
+								case T_OPEN_TAG:
+									$hasOpenParen = false;
+									$hasCloseParen = false;
+									$backtickCount = 0;
+									$possiblyHasExecutablePHP = false;
+									break;
+								
+								case T_OPEN_TAG_WITH_ECHO:
+									$hasOpenParen = false;
+									$hasCloseParen = false;
+									$backtickCount = 0;
+									$possiblyHasExecutablePHP = true;
+									break;
+								
+								case T_CLOSE_TAG:
+									if ($possiblyHasExecutablePHP) {
+										$hasExecutablePHP = true; //Assume the echo short tag outputted something useful
+									}
+									break 2;
+									
+								case T_NEW:
+								case T_CLONE:
+								case T_ECHO:
+								case T_PRINT:
+								case T_REQUIRE:
+								case T_INCLUDE:
+								case T_REQUIRE_ONCE:
+								case T_INCLUDE_ONCE:
+								case T_HALT_COMPILER:
+								case T_EXIT:
+									$hasExecutablePHP = true;
+									break 2;
+							}
+						}
+						else {
+							switch ($token) {
+								case '(':
+									$hasOpenParen = true;
+									break;
+								case ')':
+									$hasCloseParen = true;
+									break;
+								case '`':
+									$backtickCount++;
+									break;
+							}
+						}
+						if (!$hasExecutablePHP && (($hasOpenParen && $hasCloseParen) || ($backtickCount > 1 && $backtickCount % 2 === 0))) {
+							$hasExecutablePHP = true;
+							break;
+						}
+					}
+					
+					if ($hasExecutablePHP) {
+						return true;
+					}
+					
+					$wrappedTokenCheckBytes = substr($data, - min($maxTokenSize, $actualReadsize)); 
+				}
+			}
+		}
+		
+		return false;
 	}
 
 	/**
@@ -1223,7 +1377,27 @@ class wfWAFRuleComparisonSubject {
 	 * @return string
 	 */
 	public function renderRule() {
-		$rule = is_array($this->getSubject()) ? join('.', $this->getSubject()) : $this->getSubject();
+		$subjects = $this->getSubject();
+		if (is_array($subjects)) {
+			if (strpos($subjects[0], '.') !== false) {
+				list($superGlobal, $global) = explode('.', $subjects[0], 2);
+				unset($subjects[0]);
+				$subjects = array_merge(array($superGlobal, $global), $subjects);
+			}
+			$rule = '';
+			foreach ($subjects as $subject) {
+				if (preg_match("/^[a-zA-Z_][a-zA-Z0-9_]*$/", $subject)) {
+					$rule .= "$subject.";
+				} else {
+					$rule = rtrim($rule, '.');
+					$rule .= sprintf("['%s']", str_replace("'", "\\'", $subject));
+				}
+			}
+			$rule = rtrim($rule, '.');
+		} else {
+			$rule = $this->getSubject();
+		}
+
 		foreach ($this->getFilters() as $filter) {
 			$rule = $filter . '(' . $rule . ')';
 		}

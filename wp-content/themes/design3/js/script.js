@@ -1,5 +1,22 @@
 $(document).ready(function() {
 
+  $('.sub-menu').append('<i class="fa fa-times" aria-hidden="true"></i>');
+
+
+$('.menu-item-has-children').click( function(){
+
+  console.log(this);
+
+  $(this).children('.sub-menu').slideDown(200, stop());
+
+});
+
+$('i.fa.fa-times').click(function(e){
+  e.stopPropagation();
+  $(this).parent().slideUp(200, stop());
+})
+
+
 
     $.fn.extend({
         animateCss: function(animationName) {
@@ -11,10 +28,12 @@ $(document).ready(function() {
     });
     var w = $(window).innerWidth();
     if (w > 768) {
-        $('.menu-item-has-children').hover(function() {
-            $(this).children('.sub-menu').slideDown(200, stop());
+        $('.menu-item-has-children').hover(function(e) {
+          e.preventDefault();
+
+            //$(this).children('.sub-menu').slideDown(200, stop());
         }, function() {
-            $(this).children('.sub-menu').slideUp(200, stop());
+            //$(this).children('.sub-menu').slideUp(200, stop());
         });
 
         function stop() {
@@ -129,7 +148,7 @@ $(document).ready(function() {
             $('.bottom-header').addClass('fixed')
 
 
-        } 
+        }
         else if (top < headerstartpos) {
             console.log('notfixed');
             $('.bottom-header').removeClass('fixed')
@@ -143,7 +162,7 @@ $(document).ready(function() {
 
     var mySwiper = new Swiper('#slideshow .swiper-container', {
 
-        // Optional parameters	
+        // Optional parameters
 
         loop: true,
         autoplay: 6000,

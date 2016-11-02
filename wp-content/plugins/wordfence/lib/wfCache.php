@@ -449,7 +449,7 @@ class wfCache {
 			fclose($fh);
 			return "Could not read from $htaccessPath";
 		}
-		$contents = preg_replace('/#WFCACHECODE.*WFCACHECODE[r\s\n\t]*/s', '', $contents);
+		$contents = preg_replace('/#WFCACHECODE.*WFCACHECODE[\r\s\n\t]*/s', '', $contents);
 		if($action == 'add'){
 			$code = self::getHtaccessCode();
 			$contents = $code . "\n" . $contents;
@@ -606,7 +606,7 @@ EOT;
 				return "Could not read from $htaccessPath";
 			}
 
-			$contents = preg_replace('/#WFIPBLOCKS.*WFIPBLOCKS[r\s\n\t]*/s', '', $contents);
+			$contents = preg_replace('/#WFIPBLOCKS.*WFIPBLOCKS[\r\s\n\t]*/s', '', $contents);
 
 			ftruncate($fh, 0);
 			fflush($fh);
@@ -667,14 +667,14 @@ EOT;
 						$browserLines[] = "\t#Blocking code for browser pattern: $browser\n";
 						$browser = preg_replace('/([\-\_\.\+\!\@\#\$\%\^\&\(\)\[\]\{\}\/])/', "\\\\$1", $browser);
 						$browser = preg_replace('/\*/', '.*', $browser);
-						$browserLines[] = "\tSetEnvIf User-Agent " . $browser . " WordfenceBadBrowser=1\n";
+						$browserLines[] = "\tSetEnvIf User-Agent \"" . $browser . "\" WordfenceBadBrowser=1\n";
 						$browserAdded = true;
 					} else if($referer){
 						if($browser || $range){ continue; }
 						$browserLines[] = "\t#Blocking code for referer pattern: $referer\n";
 						$referer = preg_replace('/([\-\_\.\+\!\@\#\$\%\^\&\(\)\[\]\{\}\/])/', "\\\\$1", $referer);
 						$referer = preg_replace('/\*/', '.*', $referer);
-						$browserLines[] = "\tSetEnvIf Referer " . $referer . " WordfenceBadBrowser=1\n";
+						$browserLines[] = "\tSetEnvIf Referer \"" . $referer . "\" WordfenceBadBrowser=1\n";
 						$browserAdded = true;
 					}
 				}
@@ -702,7 +702,7 @@ EOT;
 			fclose($fh);
 			return "Could not read from $htaccessPath";
 		}
-		$contents = preg_replace('/#WFIPBLOCKS.*WFIPBLOCKS[r\s\n\t]*/s', '', $contents);
+		$contents = preg_replace('/#WFIPBLOCKS.*WFIPBLOCKS[\r\s\n\t]*/s', '', $contents);
 		$contents = $blockCode . $contents;
 		ftruncate($fh, 0);
 		fflush($fh);
@@ -719,10 +719,7 @@ EOT;
 
 		$homePath = get_home_path();
 		$htaccessFile = $homePath.'.htaccess';
-		if (file_exists($htaccessFile)) {
-			return $htaccessFile;
-		}
-		return false;
+		return $htaccessFile;
 	}
 	public static function doNotCache(){
 		if(! defined('WFDONOTCACHE')){

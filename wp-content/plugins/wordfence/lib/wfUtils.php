@@ -38,6 +38,41 @@ class wfUtils {
 			}
 		}
 	}
+	public static function makeDuration($secs, $createExact = false) {
+		$components = array();
+		
+		$months = floor($secs / (86400 * 30)); $secs -= $months * 86400 * 30;
+		$days = floor($secs / 86400); $secs -= $days * 86400;
+		$hours = floor($secs / 3600); $secs -= $hours * 3600;
+		$minutes = floor($secs / 60); $secs -= $minutes * 60;
+		
+		if ($months) {
+			$components[] = self::pluralize($months, 'month');
+			if (!$createExact) {
+				$hours = $minutes = $secs = 0;
+			}
+		}
+		if ($days) {
+			$components[] = self::pluralize($days, 'day');
+			if (!$createExact) {
+				$minutes = $secs = 0;
+			}
+		}
+		if ($hours) {
+			$components[] = self::pluralize($hours, 'hour');
+			if (!$createExact) {
+				$secs = 0;
+			}
+		}
+		if ($minutes) {
+			$components[] = self::pluralize($minutes, 'minute');
+		}
+		if ($secs) {
+			$components[] = self::pluralize($secs, 'second');
+		}
+		
+		return implode(' ', $components);
+	}
 	public static function pluralize($m1, $t1, $m2 = false, $t2 = false) {
 		if($m1 != 1) {
 			$t1 = $t1 . 's';
@@ -348,7 +383,7 @@ class wfUtils {
 		if(isset($_COOKIE)){
 			if(is_array($_COOKIE)){
 				foreach($_COOKIE as $key => $val){
-					if(strpos($key, 'wordpress_logged_in') == 0){
+					if(strpos($key, 'wordpress_logged_in') === 0){
 						return true;
 					}
 				}
@@ -634,14 +669,17 @@ class wfUtils {
 	public static function isValidIP($IP){
 		return filter_var($IP, FILTER_VALIDATE_IP) !== false;
 	}
-	public static function getRequestedURL(){
-		if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']){
+	public static function getRequestedURL() {
+		if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']) {
 			$host = $_SERVER['HTTP_HOST'];
-		} else {
+		} else if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME']) {
 			$host = $_SERVER['SERVER_NAME'];
 		}
+		else {
+			return null;
+		}
 		$prefix = 'http';
-		if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] ){
+		if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) {
 			$prefix = 'https';
 		}
 		return $prefix . '://' . $host . $_SERVER['REQUEST_URI'];
@@ -795,6 +833,9 @@ class wfUtils {
 
 	public static function endProcessingFile() {
 		wfConfig::set('scanFileProcessing', null);
+		if (wfConfig::get('lowResourceScansEnabled')) {
+			usleep(10000); //10 ms
+		}
 	}
 
 	public static function getScanLock(){
@@ -919,7 +960,7 @@ class wfUtils {
 		if (!$host) {
 			// This function works for IPv4 or IPv6
 			if (function_exists('gethostbyaddr')) {
-				$host = gethostbyaddr($IP);
+				$host = @gethostbyaddr($IP);
 			}
 			if (!$host) {
 				$ptr = false;
@@ -1008,10 +1049,11 @@ class wfUtils {
 		if(! (function_exists('geoip_open') && function_exists('geoip_country_code_by_addr') && function_exists('geoip_country_code_by_addr_v6'))){
 			require_once('wfGeoIP.php');
 		}
-		$gi = geoip_open(dirname(__FILE__) . "/GeoIP.dat",GEOIP_STANDARD);
 		if (filter_var($IP, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) !== false) {
+			$gi = geoip_open(dirname(__FILE__) . "/GeoIPv6.dat", GEOIP_STANDARD);
 			$country = geoip_country_code_by_addr_v6($gi, $IP);
 		} else {
+			$gi = geoip_open(dirname(__FILE__) . "/GeoIP.dat", GEOIP_STANDARD);
 			$country = geoip_country_code_by_addr($gi, $IP);
 		}
 		geoip_close($gi);
@@ -1161,7 +1203,7 @@ class wfUtils {
 			return gethostbynamel($host);
 		}
 
-		$ips = array_merge((array) dns_get_record($host, DNS_AAAA), (array) dns_get_record($host, DNS_A));
+		$ips = array_merge((array) @dns_get_record($host, DNS_AAAA), (array) @dns_get_record($host, DNS_A));
 		$return = array();
 
 		foreach ($ips as $record) {
@@ -1235,7 +1277,7 @@ class wfUtils {
 
 	public static function htaccessAppend($code)
 	{
-		$htaccess = ABSPATH . '/.htaccess';
+		$htaccess = wfCache::getHtaccessPath();
 		$content  = self::htaccess();
 		if (wfUtils::isNginx() || !is_writable($htaccess)) {
 			return false;
@@ -1248,10 +1290,27 @@ class wfUtils {
 
 		return true;
 	}
+	
+	public static function htaccessPrepend($code)
+	{
+		$htaccess = wfCache::getHtaccessPath();
+		$content  = self::htaccess();
+		if (wfUtils::isNginx() || !is_writable($htaccess)) {
+			return false;
+		}
+		
+		if (strpos($content, $code) === false) {
+			// make sure we write this once
+			file_put_contents($htaccess, trim($code) . "\n" . $content, LOCK_EX);
+		}
+		
+		return true;
+	}
 
 	public static function htaccess() {
-		if (is_readable(ABSPATH . '/.htaccess') && !wfUtils::isNginx()) {
-			return file_get_contents(ABSPATH . '/.htaccess');
+		$htaccess = wfCache::getHtaccessPath();
+		if (is_readable($htaccess) && !wfUtils::isNginx()) {
+			return file_get_contents($htaccess);
 		}
 		return "";
 	}
@@ -1271,7 +1330,6 @@ class wfUtils {
 		$keys[$index] = $newKey;
 		return array_combine($keys, array_values($array));
 	}
-
 }
 
 // GeoIP lib uses these as well
