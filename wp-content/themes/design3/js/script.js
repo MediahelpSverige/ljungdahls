@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   $('.sub-menu').append('<i class="fa fa-times" aria-hidden="true"></i>');
+  $('.sub-menu').prepend('<h2 class="small-title">Tjänster</h2>');
 
 
 $('.menu-item-has-children').click( function(){
