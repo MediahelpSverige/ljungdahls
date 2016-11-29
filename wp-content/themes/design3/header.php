@@ -26,6 +26,7 @@
 		<script src="https://use.typekit.net/tdq5gcj.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="fb-root"></div>
