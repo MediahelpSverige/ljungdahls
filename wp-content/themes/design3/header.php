@@ -13,6 +13,7 @@
 		<link href='<?php bloginfo( 'template_url' ); ?>/css/custom.css' rel='stylesheet' type='text/css'>
 		<link href='<?php bloginfo( 'template_url' ); ?>/css/responsive.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/node_modules/lightbox2/dist/css/lightbox.css">
 		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/printElement.min.js"></script>
