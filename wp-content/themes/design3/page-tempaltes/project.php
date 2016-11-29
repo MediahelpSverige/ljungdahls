@@ -54,7 +54,7 @@ get_header();
 
             <div class="project-image" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
             </div>
-            <?php the_title('<h3>','</h3>'); ?>
+            <?php // the_title('<h3>','</h3>'); ?>
             <?php the_content(); ?>
           </div>
         </div>
