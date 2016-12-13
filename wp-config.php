@@ -55,6 +55,8 @@ if (getenv('WP_ENV') !== false) {
 } 
 
 // Define site host
+//define('WP_CACHE', true); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', '/storage/content/58/180958/ljungdahls.mediahelpcrm.se/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 if (isset($_SERVER['HTTP_X_FORWARDED_HOST']) && !empty($_SERVER['HTTP_X_FORWARDED_HOST'])) {
     $hostname = $_SERVER['HTTP_X_FORWARDED_HOST'];
 } else {
